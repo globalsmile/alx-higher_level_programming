@@ -11,26 +11,26 @@ At the end of this project you are expected to be able to explain to anyone, wit
 * How to print text and variables using print
 * How to use strings
 * What are indexing and slicing in Python
-* What is the official Holberton Python coding style and how to check your code with PEP 8
+* What is the official Python coding style and how to check your code with pycodestyle
 
-**0. Run Python file**
+**[0-run](./0-run)**
 
 Write a Shell script that runs a Python script.
 
 The Python file name will be saved in the environment variable $PYFILE
 
-**1. Run inline**
+**[1-run_inline](./1-run_inline)**
 
     Write a Shell script that runs Python code.
 The Python code will be saved in the environment variable $PYCODE
 
-**2. Hello, print**
+**[2-print.py](./2-print.py)**
 
     Write a Python script that prints exactly "Programming is like building a
 multilingual puzzle, followed by a new line.
 Use the function print
 
-**3. Print integer**
+**[3-print_number.py](./3-print_number.py)**
 
     Complete this source code in order to print the integer stored in the variable number, followed by Battery street, followed by a new line.
 The output of the script should be:
@@ -39,7 +39,7 @@ The output of the script should be:
 * Your code must be 3 lines long
 * You have to use the new print numbers tips
 
-**4. Print float**
+**[4-print_float.py](./4-print_float.py)**
 
     Complete the source code in order to print the float stored in the variable number with a precision of 2 digits.
 
@@ -49,7 +49,7 @@ The output of the program should be:
 * You are not allowed to cast number to string
 * You have to use the new print formatting tips
 
-**5. Print string**
+**[5-print_string.py](./5-print_string.py)**
 
     Complete this source code in order to print 3 times a string stored in the variable str, followed by its first 9 characters.
 The output of the program should be:
@@ -60,14 +60,14 @@ The output of the program should be:
 * You are not allowed to use any loops or conditional statement
 * Your program should be maximum 5 lines long
 
-**6. Play with strings**
+**[6-concat.py](./6-concat.py)**
 
     Complete this source code to print Welcome to Holberton School!
 * You are not allowed to use any loops or conditional statements.
 * You have to use the variables str1 and str2 in your new line of code
 * Your program should be exactly 5 lines long
 
-**7. Copy - Cut - Paste**
+**[7-edges.py](./7-edges.py)**
 * You can find the source code here
 * You are not allowed to use any loops or conditional statements
 * Your program should be exactly 8 lines long
@@ -75,7 +75,7 @@ The output of the program should be:
 * word_last_2 should contain the last 2 letters of the variable word
 * middle_word should contain the value of the variable word without the first and last letters
 
-**8. Create a new sentence**
+**[8-concat_edges.py](./8-concat_edges.py)**
 
     Complete this source code to print object-oriented programming with Python, followed by a new line.
 * You can find the source code here
@@ -84,12 +84,12 @@ The output of the program should be:
 * You are not allowed to create new variables
 * You are not allowed to use string literals
 
-**9. Easter Egg**
+**[9-easter_egg.py](./9-easter_egg.py)**
 
     Write a Python script that prints “The Zen of Python”, by TimPeters, followed by a new line.
 * Your script should be maximum 98 characters long (please check with wc -m 9-easter_egg.py)
 
-**10. Linked list cycle**
+**[10-check_cylcle.c](./10-check_cycle.c)**
 
     Technical interview preparation:
     Write a function in C that checks if a singly linked list has a cycle in it.
@@ -102,14 +102,14 @@ The output of the program should be:
 Only these functions are allowed: write, print
 f, putchar, puts, malloc, free
 
-**11. Hello, write**
+**[100-write.py](./100-write.py)**
                                                                                    Write a Python script that prints exactly and that piece of art is useful -    Dora Korpar, 2015-10-19, followed by a new line.
 * Use the function write from the sys module
 * You are not allowed to use print
 * Your script should print to stderr
 * Your script should exit with the status code 1
 
-**12. Compile**
+**[101-compile.py](./101-compile.py)**
 
      Write a script that compiles a Python script file.
 
@@ -117,7 +117,7 @@ f, putchar, puts, malloc, free
 
      The output filename has to be $PYFILEc (ex: export PYFILE=my_main.py => output filename: my_main.pyc)
 
-**13. ByteCode -> Python #1**
+**[102-magic_calculation.py](./102-magic_calculation.py)**
 
      Write the Python function def magic_calculation(a, b): that does exactly       the same as the following Python bytecode:
 
