@@ -12,7 +12,8 @@ if number < 0:
     if transformed_last_digit == 0:
         print(f"{str} {number} is {transformed_last_digit} and is 0")
     else:
-        print(f"{str} {number} is {transformed_last_digit} and is less than 6 and not 0")
+        print(f"{str} {number} is {transformed_last_digit} and is less than 6"
+              f" and not 0")
 else:
     last_digit = number % 10
     if last_digit == 0:
