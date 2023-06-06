@@ -1,0 +1,11 @@
+Last digit of -7761 is -1 and is less than 6 and not 0
+Last digit of -1610 is 0 and is 0
+Last digit of 8929 is 9 and is greater than 5
+Last digit of -8113 is -3 and is less than 6 and not 0
+Last digit of 6777 is 7 and is greater than 5
+Last digit of -8839 is -9 and is less than 6 and not 0
+Last digit of -8911 is -1 and is less than 6 and not 0
+Last digit of -428 is -8 and is less than 6 and not 0
+Last digit of -2630 is 0 and is 0
+Last digit of -9709 is -9 and is less than 6 and not 0
+Last digit of -5896 is -6 and is less than 6 and not 0

@@ -1,0 +1,9 @@
+-4 is negative
+-10 is negative
+1 is positive
+-4 is negative
+-10 is negative
+-1 is negative
+-9 is negative
+3 is positive
+-9 is negative
