@@ -391,7 +391,7 @@ Write a function that returns a list with all values multiplied by a number with
 * You have to use `map`
 * Your file should be max 3 lines
 
-**Solution:** [11-multiply_list_map.py](./11-mutiply_list_map.py)
+**Solution:** [11-multiply_list_map.py](./11-multiply_list_map.py)
 
 ```
 $ guillaume@ubuntu:~/0x04$ cat 11-main.py
