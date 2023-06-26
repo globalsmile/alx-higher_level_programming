@@ -1,4 +1,4 @@
-# Exceptions
+# 0x05. Python - Exceptions
 
 # Learning Objectives
 
@@ -26,10 +26,10 @@ Write a function that prints `x` elements of a list.
 * You are not allowed to import any module
 * You are not allowed to use `len()`
 
-**Solution:** [0-safe_print_list.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x05-python-exceptions/0-safe_print_list.py)
+**Solution:** [0-safe_print_list.py](./0-safe_print_list.py)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x05$ cat 0-main.py
+$ julian@ubuntu:~/0x05$ cat 0-main.py
 #!/usr/bin/python3
 safe_print_list = __import__('0-safe_print_list').safe_print_list
 
@@ -42,14 +42,14 @@ print("nb_print: {:d}".format(nb_print))
 nb_print = safe_print_list(my_list, len(my_list) + 2)
 print("nb_print: {:d}".format(nb_print))
 
-$ amonkeyprogrammer@ubuntu:~/0x05$ ./0-main.py
+$ julian@ubuntu:~/0x05$ ./0-main.py
 12
 nb_print: 2
 12345
 nb_print: 5
 12345
 nb_print: 5
-$ amonkeyprogrammer@ubuntu:~/0x05$
+$ julian@ubuntu:~/0x05$
 ```
 
 ## Safe printing of an integers list
@@ -66,10 +66,10 @@ Write a function that prints an integer with `"{:d}".format()`.
 * You are not allowed to import any module
 * You are not allowed to use `type()`
 
-**Solution:** [1-safe_print_integer.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x05-python-exceptions/1-safe_print_integer.py)
+**Solution:** [1-safe_print_integer.py](./1-safe_print_integer.py)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x05$ cat 1-main.py
+$ julian@ubuntu:~/0x05$ cat 1-main.py
 #!/usr/bin/python3
 safe_print_integer = __import__('1-safe_print_integer').safe_print_integer
 
@@ -88,11 +88,11 @@ has_been_print = safe_print_integer(value)
 if not has_been_print:
     print("{} is not an integer".format(value))
 
-$ amonkeyprogrammer@ubuntu:~/0x05$ ./1-main.py
+$ julian@ubuntu:~/0x05$ ./1-main.py
 89
 -89
 Holberton is not an integer
-$ amonkeyprogrammer@ubuntu:~/0x05$
+$ julian@ubuntu:~/0x05$
 ```
 
 ## Print and count integers
@@ -110,10 +110,10 @@ Write a function that prints the first `x` elements of a list and only integers.
 * You are not allowed to import any module
 * You are not allowed to use `len()`
 
-**Solution:** [2-safe_print_list_integers.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x05-python-exceptions/2-safe_print_list_integers.py)
+**Solution:** [2-safe_print_list_integers.py](./2-safe_print_list_integers.py)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x05$ cat 2-main.py
+$ julian@ubuntu:~/0x05$ cat 2-main.py
 #!/usr/bin/python3
 safe_print_list_integers = \
     __import__('2-safe_print_list_integers').safe_print_list_integers
@@ -130,7 +130,7 @@ print("nb_print: {:d}".format(nb_print))
 nb_print = safe_print_list_integers(my_list, len(my_list) + 2)
 print("nb_print: {:d}".format(nb_print))
 
-$ amonkeyprogrammer@ubuntu:~/0x05$ ./2-main.py
+$ julian@ubuntu:~/0x05$ ./2-main.py
 12
 nb_print: 2
 12345
@@ -141,7 +141,7 @@ nb_print: 5
   File "/0x05/2-safe_print_list_integers.py", line 7, in safe_print_list_integers
     print("{:d}".format(my_list[i]), end="")
 IndexError: list index out of range
-$ amonkeyprogrammer@ubuntu:~/0x05$
+$ julian@ubuntu:~/0x05$
 ```
 
 ## Integers division with debug
@@ -156,10 +156,10 @@ Write a function that divides 2 integers and prints the result.
 * You have to use `"{}".format()` to print the result
 * You are not allowed to import any module
 
-**Solution:** [3-safe_print_division.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x05-python-exceptions/3-safe_print_division.py)
+**Solution:** [3-safe_print_division.py](./3-safe_print_division.py)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x05$ cat 3-main.py
+$ julian@ubuntu:~/0x05$ cat 3-main.py
 #!/usr/bin/python3
 safe_print_division = __import__('3-safe_print_division').safe_print_division
 
@@ -173,12 +173,12 @@ b = 0
 result = safe_print_division(a, b)
 print("{:d} / {:d} = {}".format(a, b, result))
 
-$ amonkeyprogrammer@ubuntu:~/0x05$ ./3-main.py
+$ julian@ubuntu:~/0x05$ ./3-main.py
 Inside result: 6.0
 12 / 2 = 6.0
 Inside result: None
 12 / 0 = None
-$ amonkeyprogrammer@ubuntu:~/0x05$
+$ julian@ubuntu:~/0x05$
 ```
 
 ## Divide a list
@@ -199,10 +199,10 @@ Write a function that divides element by element 2 lists.
 * You have to use `try: / except: / finally:`
 * You are not allowed to import any module
 
-**Solution:** [4-list_division.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x05-python-exceptions/4-list_division.py)
+**Solution:** [4-list_division.py](./4-list_division.py)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x05$ cat 4-main.py
+$ julian@ubuntu:~/0x05$ cat 4-main.py
 #!/usr/bin/python3
 list_division = __import__('4-list_division').list_division
 
@@ -218,14 +218,14 @@ my_l_2 = [2, 0, "H", 2, 7]
 result = list_division(my_l_1, my_l_2, max(len(my_l_1), len(my_l_2)))
 print(result)
 
-$ amonkeyprogrammer@ubuntu:~/0x05$ ./4-main.py
+$ julian@ubuntu:~/0x05$ ./4-main.py
 [5.0, 2.0, 1.0]
 --
 division by 0
 wrong type
 out of range
 [5.0, 0, 0, 2.0, 0]
-$ amonkeyprogrammer@ubuntu:~/0x05$ 
+$ julian@ubuntu:~/0x05$ 
 ```
 
 ## Raise exception
@@ -235,10 +235,10 @@ Write a function that raises a type exception.
 * Prototype: `def raise_exception():`
 * You are not allowed to import any module
 
-**Solution:** [5-raise_exception.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x05-python-exceptions/5-raise_exception.py)
+**Solution:** [5-raise_exception.py](./5-raise_exception.py)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x05$ cat 5-main.py
+$ julian@ubuntu:~/0x05$ cat 5-main.py
 #!/usr/bin/python3
 raise_exception = __import__('5-raise_exception').raise_exception
 
@@ -247,9 +247,9 @@ try:
 except TypeError as te:
     print("Exception raised")
 
-$ amonkeyprogrammer@ubuntu:~/0x05$ ./5-main.py
+$ julian@ubuntu:~/0x05$ ./5-main.py
 Exception raised
-$ amonkeyprogrammer@ubuntu:~/0x05$
+$ julian@ubuntu:~/0x05$
 ```
 
 ## Raise a message
@@ -259,10 +259,10 @@ Write a function that raises a name exception with a message.
 * Prototype: `def raise_exception_msg(message=""):`
 * You are not allowed to import any module
 
-**Solution:** [6-raise_exception_msg.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x05-python-exceptions/6-raise_exception_msg.py)
+**Solution:** [6-raise_exception_msg.py](./6-raise_exception_msg.py)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x05$ cat 6-main.py
+$ julian@ubuntu:~/0x05$ cat 6-main.py
 #!/usr/bin/python3
 raise_exception_msg = __import__('6-raise_exception_msg').raise_exception_msg
 
@@ -271,9 +271,9 @@ try:
 except NameError as ne:
     print(ne)
 
-$ amonkeyprogrammer@ubuntu:~/0x05$ ./6-main.py
+$ julian@ubuntu:~/0x05$ ./6-main.py
 C is fun
-$ amonkeyprogrammer@ubuntu:~/0x05$
+$ julian@ubuntu:~/0x05$
 ```
 
 ## Safe integer print with error message
@@ -289,10 +289,10 @@ Write a function that prints an integer.
 * You have to use `"{:d}".format()` to print as integer
 * You are not allowed to use `type()`
 
-**Solution:** [100-safe_print_integer_err.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x05-python-exceptions/100-safe_print_integer_err.py)
+**Solution:** [100-safe_print_integer_err.py](./100-safe_print_integer_err.py)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x05$ cat 100-main.py
+$ julian@ubuntu:~/0x05$ cat 100-main.py
 #!/usr/bin/python3
 safe_print_integer_err = \
     __import__('100-safe_print_integer_err').safe_print_integer_err
@@ -317,11 +317,11 @@ $ amonkeyprogrammer@ubuntu:~/0x05$ ./100-main.py
 -89
 Exception: Unknown format code 'd' for object of type 'str'
 Holberton is not an integer
-$ amonkeyprogrammer@ubuntu:~/0x05$ ./100-main.py 2> /dev/null
+$ julian@ubuntu:~/0x05$ ./100-main.py 2> /dev/null
 89
 -89
 Holberton is not an integer
-$ amonkeyprogrammer@ubuntu:~/0x05$
+$ julian@ubuntu:~/0x05$
 ```
 
 # Safe function
@@ -334,10 +334,10 @@ Write a function that executes a function safely.
 * Otherwise, returns `None` if something happens during the function and prints in `stderr` the error precede by `Exception:`
 * You have to use `try: / except:`
 
-**Solution:** [101-safe_function.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x05-python-exceptions/101-safe_function.py)
+**Solution:** [101-safe_function.py](./101-safe_function.py)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x05$ cat 101-main.py
+$ julian@ubuntu:~/0x05$ cat 101-main.py
 #!/usr/bin/python3
 safe_function = __import__('101-safe_function').safe_function
 
@@ -362,7 +362,7 @@ def print_list(my_list, len):
 result = safe_function(print_list, [1, 2, 3, 4], 10)
 print("result of print_list: {}".format(result))
 
-$ amonkeyprogrammer@ubuntu:~/0x05$ ./101-main.py
+$ julian@ubuntu:~/0x05$ ./101-main.py
 result of my_div: 5.0
 Exception: division by zero
 result of my_div: None
@@ -372,7 +372,7 @@ result of my_div: None
 4
 Exception: list index out of range
 result of print_list: None
-$ amonkeyprogrammer@ubuntu:~/0x05$ ./101-main.py 2> /dev/null
+$ julian@ubuntu:~/0x05$ ./101-main.py 2> /dev/null
 result of my_div: 5.0
 result of my_div: None
 1
@@ -380,14 +380,14 @@ result of my_div: None
 3
 4
 result of print_list: None
-$ amonkeyprogrammer@ubuntu:~/0x05$
+$ julian@ubuntu:~/0x05$
 ```
 
 # ByteCode -> Python #4
 
 Write the Python function `def magic_calculation(a, b):` that does exactly the same as the following Python bytecode:
 
-**Solution:** [102-magic_calculation.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x05-python-exceptions/102-magic_calculation.py)
+**Solution:** [102-magic_calculation.py](./102-magic_calculation.py)
 
 ```
   3           0 LOAD_CONST               1 (0)
@@ -495,13 +495,13 @@ NOTE:
 * The python script will be launched using the `-u` option (Force `stdout` to be unbuffered).
 * It is **strongly** advised to either use `setbuf(stdout, NULL);` or `fflush(stdout)` in your C functions IF you choose to use `printf`. The reason to that is that Python `s` print `and libC` s `printf` don’t share the same buffer, and the output can appear disordered.
 
-**Solution:** [103-python.c](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x05-python-exceptions/103-python.c)
+**Solution:** [103-python.c](./103-python.c)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/CPython$ python3 --version
+$ julian@ubuntu:~/CPython$ python3 --version
 Python 3.4.3
-$ amonkeyprogrammer@ubuntu:~/CPython$ gcc -Wall -Werror -Wextra -pedantic -std=c99 -shared -Wl,-soname,libPython.so -o libPython.so -fPIC -I/usr/include/python3.4 103-python.c
-$ amonkeyprogrammer@ubuntu:~/CPython$ cat 103-tests.py 
+$ julian@ubuntu:~/CPython$ gcc -Wall -Werror -Wextra -pedantic -std=c99 -shared -Wl,-soname,libPython.so -o libPython.so -fPIC -I/usr/include/python3.4 103-python.c
+$ julian@ubuntu:~/CPython$ cat 103-tests.py 
 #!/usr/bin/python3 -u
 
 import ctypes
@@ -542,8 +542,8 @@ l = [-1.0, -0.1, 0.0, 1.0, 3.14, 3.14159, 3.14159265, 3.141592653589793238462643
 print(l)
 lib.print_python_list(l);
 lib.print_python_float(l);
-lib.print_python_list(f);
-$ amonkeyprogrammer@ubuntu:~/CPython$ ./103-tests.py 
+lib.print_python_list(l);
+$ julian@ubuntu:~/CPython$ ./103-tests.py 
 [.] bytes object info
   size: 5
   trying string: Hello
@@ -660,5 +660,5 @@ Element 7: float
   [ERROR] Invalid Float Object
 [*] Python list info
   [ERROR] Invalid List Object
-$ amonkeyprogrammer@ubuntu:~/CPython$
+$ julian@ubuntu:~/CPython$
 ```
