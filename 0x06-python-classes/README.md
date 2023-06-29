@@ -30,10 +30,10 @@ Write an empty class `Square` that defines a square:
 
 * You are not allowed to import any module
 
-**Solution:** [0-square.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x06-python-classes/0-square.py)
+**Solution:** [0-square.py](./0-square.py)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x06$ cat 0-main.py
+$ globalsmile@ubuntu:~/0x06$ cat 0-main.py
 #!/usr/bin/python3
 Square = __import__('0-square').Square
 
@@ -41,10 +41,10 @@ my_square = Square()
 print(type(my_square))
 print(my_square.__dict__)
 
-$ amonkeyprogrammer@ubuntu:~/0x06$ ./0-main.py
+$ globalsmile@ubuntu:~/0x06$ ./0-main.py
 <class '0-square.Square'>
 {}
-$ amonkeyprogrammer@ubuntu:~/0x06$
+$ globalsmile@ubuntu:~/0x06$
 ```
 
 ## Square with size
@@ -55,10 +55,10 @@ Write a class `Square` that defines a square by: (based on `0-square.py`)
 * Instantiation with `size` (no type/value verification)
 * You are not allowed to import any module
 
-**Solution:** [1-square.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x06-python-classes/1-square.py)
+**Solution:** [1-square.py](./1-square.py)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x06$ cat 1-main.py
+$ globalsmile@ubuntu:~/0x06$ cat 1-main.py
 #!/usr/bin/python3
 Square = __import__('1-square').Square
 
@@ -76,12 +76,12 @@ try:
 except Exception as e:
     print(e)
 
-$ amonkeyprogrammer@ubuntu:~/0x06$ ./1-main.py
+$ globalsmile@ubuntu:~/0x06$ ./1-main.py
 <class '1-square.Square'>
 {'_Square__size': 3}
 'Square' object has no attribute 'size'
 'Square' object has no attribute '__size'
-$ amonkeyprogrammer@ubuntu:~/0x06$
+$ globalsmile@ubuntu:~/0x06$
 ```
 
 ## Size validation
@@ -94,10 +94,10 @@ Write a class `Square` that defines a square by: (based on `1-square.py`)
     * if `size` is less than `0`, raise a `ValueError` exception with the message `size must be >= 0`
 * You are not allowed to import any module
 
-**Solution:** [2-square.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x06-python-classes/2-square.py)
+**Solution:** [2-square.py](./2-square.py)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x06$ cat 2-main.py
+$ globalsmile@ubuntu:~/0x06$ cat 2-main.py
 #!/usr/bin/python3
 Square = __import__('2-square').Square
 
@@ -133,7 +133,7 @@ try:
 except Exception as e:
     print(e)
 
-$ amonkeyprogrammer@ubuntu:~/0x06$ ./2-main.py
+$ globalsmile@ubuntu:~/0x06$ ./2-main.py
 <class '2-square.Square'>
 {'_Square__size': 3}
 <class '2-square.Square'>
@@ -142,7 +142,7 @@ $ amonkeyprogrammer@ubuntu:~/0x06$ ./2-main.py
 'Square' object has no attribute '__size'
 size must be an integer
 size must be >= 0
-$ amonkeyprogrammer@ubuntu:~/0x06$
+$ globalsmile@ubuntu:~/0x06$
 ```
 
 ## Area of a square
@@ -156,10 +156,10 @@ Write a class `Square` that defines a square by: (based on `2-square.py`)
 * Public instance method: `def area(self):` that returns the current square area
 * You are not allowed to import any module
 
-**Solution:** [3-square.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x06-python-classes/3-square.py)
+**Solution:** [3-square.py](./3-square.py)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x06$ cat 3-main.py
+$ globalsmile@ubuntu:~/0x06$ cat 3-main.py
 #!/usr/bin/python3
 Square = __import__('3-square').Square
 
@@ -179,12 +179,12 @@ except Exception as e:
 my_square_2 = Square(5)
 print("Area: {}".format(my_square_2.area()))
 
-$ amonkeyprogrammer@ubuntu:~/0x06$ ./3-main.py
+$ globalsmile@ubuntu:~/0x06$ ./3-main.py
 Area: 9
 'Square' object has no attribute 'size'
 'Square' object has no attribute '__size'
 Area: 25
-$ amonkeyprogrammer@ubuntu:~/0x06$
+$ globalsmile@ubuntu:~/0x06$
 ```
 
 ## Access and update private attribute
@@ -200,10 +200,10 @@ Write a class `Square` that defines a square by: (based on `3-square.py`)
 * Public instance method: `def area(self):` that returns the current square area
 * You are not allowed to import any module
 
-**Solution:** [4-square.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x06-python-classes/4-square.py)
+**Solution:** [4-square.py](./4-square.py)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x06$ cat 4-main.py
+$ globalsmile@ubuntu:~/0x06$ cat 4-main.py
 #!/usr/bin/python3
 Square = __import__('4-square').Square
 
@@ -219,11 +219,11 @@ try:
 except Exception as e:
     print(e)
 
-$ amonkeyprogrammer@ubuntu:~/0x06$ ./4-main.py
+$ globalsmile@ubuntu:~/0x06$ ./4-main.py
 Area: 7921 for size: 89
 Area: 9 for size: 3
 size must be an integer
-$ amonkeyprogrammer@ubuntu:~/0x06$
+$ globalsmile@ubuntu:~/0x06$
 ```
 
 ## Printing a square
@@ -241,10 +241,10 @@ Write a class `Square` that defines a square by: (based on `4-square.py`)
     * if `size` is equal to 0, print an empty line
 * You are not allowed to import any module
 
-**Solution:** [5-square.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x06-python-classes/5-square.py)
+**Solution:** [5-square.py](./5-square.py)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x06$ cat 5-main.py
+$ globalsmile@ubuntu:~/0x06$ cat 5-main.py
 #!/usr/bin/python3
 Square = __import__('5-square').Square
 
@@ -263,7 +263,7 @@ my_square.my_print()
 
 print("--")
 
-$ amonkeyprogrammer@ubuntu:~/0x06$ ./5-main.py
+$ globalsmile@ubuntu:~/0x06$ ./5-main.py
 ###
 ###
 ###
@@ -281,7 +281,7 @@ $ amonkeyprogrammer@ubuntu:~/0x06$ ./5-main.py
 --
 
 --
-$ amonkeyprogrammer@ubuntu:~/0x06$
+$ globalsmile@ubuntu:~/0x06$
 ```
 
 ## Coordinates of a square
@@ -304,10 +304,10 @@ Write a class `Square` that defines a square by: (based on `5-square.py`)
     * `position` should be use by using space - **Don’t fill lines by spaces** when `position[1] > 0`
 * You are not allowed to import any module
 
-**Solution:** [6-square.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x06-python-classes/6-square.py)
+**Solution:** [6-square.py](./6-square.py)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x06$ cat 6-main.py
+$ globalsmile@ubuntu:~/0x06$ cat 6-main.py
 #!/usr/bin/python3
 Square = __import__('6-square').Square
 
@@ -326,7 +326,7 @@ my_square_3.my_print()
 
 print("--")
 
-$ amonkeyprogrammer@ubuntu:~/0x06$ ./6-main.py | tr " " "_" | cat -e
+$ globalsmile@ubuntu:~/0x06$ ./6-main.py | tr " " "_" | cat -e
 ###$
 ###$
 ###$
@@ -340,14 +340,14 @@ ___###$
 ___###$
 ___###$
 --$
-$ amonkeyprogrammer@ubuntu:~/0x06$
+$ globalsmile@ubuntu:~/0x06$
 ```
 
 ## ByteCode -> Python #5
 
 Write the Python class `MagicClass` that does exactly the same as the following Python bytecode:
 
-**Solution:** [103-magic_class.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x06-python-classes/103-magic_class.py)
+**Solution:** [103-magic_class.py](./103-magic_class.py)
 
 ```
 Disassembly of __init__:
