@@ -41,7 +41,7 @@ try:
 
         try:
             file_size += int(pieces[-1])
-        except (ValueError, IndexError):
+        except IndexError:
             pass
 
         lc += 1
