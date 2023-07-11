@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""saves object as json string dump"""
 import json
+"""loads an object from json file"""
 
 
-def save_to_json_file(my_obj, filename):
-    """actually does it"""
-    with open(filename, mode='w', encoding='utf-8') as f:
-        f.write(json.dumps(my_obj))
+def load_from_json_file(filename):
+    """does it"""
+    with open(filename, mode='r', encoding='utf-8') as f:
+        return(json.load(f))
