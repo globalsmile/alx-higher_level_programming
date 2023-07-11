@@ -1,15 +1,14 @@
 #!/usr/bin/python3
+"""advanced"""
+
+
 def append_after(filename="", search_string="", new_string=""):
+    """appends after"""
     with open(filename, mode='r', encoding='utf-8') as f:
-        text = f.readlines()
-        new_text = []
+        lines = f.readlines()
 
-        for line in text:
-            new_text.append(line)
-
+    with open(filename, mode='w', encoding='utf-8') as f:
+        for line in lines:
+            f.write(line)
             if search_string in line:
-                new_text.append(new_string)
-
-    with open(filename, mode='w', encoding='utf-8') as nf:
-        for line in new_text:
-            nf.write(line)
+                f.write(new_string)

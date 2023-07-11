@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-from json import loads
+import json
+"""loads an object from json file"""
 
 
 def load_from_json_file(filename):
-    with open(filename, encoding='utf-8') as f:
-        return loads(f.read())
+    """does it"""
+    with open(filename, mode='r', encoding='utf-8') as f:
+        return(json.load(f))
