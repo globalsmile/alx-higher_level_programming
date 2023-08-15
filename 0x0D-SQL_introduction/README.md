@@ -20,16 +20,16 @@
 
 Write a script that lists all databases of your MySQL server.
 
-**Solution:** [0-list_databases.sql](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0D-SQL_introduction/0-list_databases.sql)
+**Solution:** [0-list_databases.sql](./0-list_databases.sql)
 
 ```
-$ amonkeyprogramer@ubuntu:~/$ cat 0-list_databases.sql | mysql -hlocalhost -uroot -p
+$ globalsmile@ubuntu:~/$ cat 0-list_databases.sql | mysql -hlocalhost -uroot -p
 Enter password: 
 Database
 information_schema
 mysql
 performance_schema
-$ amonkeyprogramer@ubuntu:~/$
+$ globalsmile@ubuntu:~/$
 ```
 
 ## Create a database
@@ -39,21 +39,21 @@ Write a script that creates the database `hbtn_0c_0` in your MySQL server.
 * If the database `hbtn_0c_0` already exists, your script should not fail
 * You are not allowed to use the `SELECT` or `SHOW` statements
 
-**Solution:** [1-create_database_if_missing.sql](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0D-SQL_introduction/1-create_database_if_missing.sql)
+**Solution:** [1-create_database_if_missing.sql](./1-create_database_if_missing.sql)
 
 ```
-$ amonkeyprogramer@ubuntu:~/$ cat 1-create_database_if_missing.sql | mysql -hlocalhost -uroot -p
+$ globalsmile@ubuntu:~/$ cat 1-create_database_if_missing.sql | mysql -hlocalhost -uroot -p
 Enter password: 
-$ amonkeyprogramer@ubuntu:~/$ cat 0-list_databases.sql | mysql -hlocalhost -uroot -p
+$ globalsmile@ubuntu:~/$ cat 0-list_databases.sql | mysql -hlocalhost -uroot -p
 Enter password: 
 Database
 information_schema
 hbtn_0c_0
 mysql
 performance_schema
-$ amonkeyprogramer@ubuntu:~/$ cat 1-create_database_if_missing.sql | mysql -hlocalhost -uroot -p
+$ globalsmile@ubuntu:~/$ cat 1-create_database_if_missing.sql | mysql -hlocalhost -uroot -p
 Enter password: 
-$ amonkeyprogramer@ubuntu:~/$
+$ globalsmile@ubuntu:~/$
 ```
 
 ## Delete a database
@@ -63,25 +63,25 @@ Write a script that deletes the database `hbtn_0c_0` in your MySQL server.
 * If the database `hbtn_0c_0` doesn’t exist, your script should not fail
 * You are not allowed to use the `SELECT` or `SHOW` statements
 
-**Solution:** [2-remove_database.sql](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0D-SQL_introduction/2-remove_database.sql)
+**Solution:** [2-remove_database.sql](./2-remove_database.sql)
 
 ```
-$ amonkeyprogramer@ubuntu:~/$ cat 0-list_databases.sql | mysql -hlocalhost -uroot -p
+$ globalsmile@ubuntu:~/$ cat 0-list_databases.sql | mysql -hlocalhost -uroot -p
 Enter password: 
 Database
 information_schema
 hbtn_0c_0
 mysql
 performance_schema
-$ amonkeyprogramer@ubuntu:~/$ cat 2-remove_database.sql | mysql -hlocalhost -uroot -p
+$ globalsmile@ubuntu:~/$ cat 2-remove_database.sql | mysql -hlocalhost -uroot -p
 Enter password: 
-$ amonkeyprogramer@ubuntu:~/$ cat 0-list_databases.sql | mysql -hlocalhost -uroot -p
+$ globalsmile@ubuntu:~/$ cat 0-list_databases.sql | mysql -hlocalhost -uroot -p
 Enter password: 
 Database
 information_schema
 mysql
 performance_schema
-$ amonkeyprogramer@ubuntu:~/$
+$ globalsmile@ubuntu:~/$
 ```
 
 ## List tables
@@ -90,10 +90,10 @@ Write a script that lists all the tables of a database in your MySQL server.
 
 * The database name will be passed as argument of `mysql` command (in the following example: `mysql` is the name of the database)
 
-**Solution:** [3-list_tables.sql](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0D-SQL_introduction/3-list_tables.sql)
+**Solution:** [3-list_tables.sql](./3-list_tables.sql)
 
 ```
-$ amonkeyprogramer@ubuntu:~/$ cat 3-list_tables.sql | mysql -hlocalhost -uroot -p mysql
+$ globalsmile@ubuntu:~/$ cat 3-list_tables.sql | mysql -hlocalhost -uroot -p mysql
 Enter password: 
 Tables_in_mysql
 columns_priv
@@ -120,7 +120,7 @@ time_zone_name
 time_zone_transition
 time_zone_transition_type
 user
-$ amonkeyprogramer@ubuntu:~/$
+$ globalsmile@ubuntu:~/$
 ```
 
 ## First table
@@ -134,16 +134,16 @@ Write a script that creates a table called `first_table` in the current database
 * If the table `first_table` already exists, your script should not fail
 * You are not allowed to use the `SELECT` or `SHOW` statements
 
-**Solution:** [4-first_table.sql](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0D-SQL_introduction/4-first_table.sql)
+**Solution:** [4-first_table.sql](./4-first_table.sql)
 
 ```
-$ amonkeyprogramer@ubuntu:~/$ cat 4-first_table.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
+$ globalsmile@ubuntu:~/$ cat 4-first_table.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password: 
-$ amonkeyprogramer@ubuntu:~/$ cat 3-list_tables.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
+$ globalsmile@ubuntu:~/$ cat 3-list_tables.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password: 
 Tables_in_hbtn_0c_0
 first_table
-$ amonkeyprogramer@ubuntu:~/$
+$ globalsmile@ubuntu:~/$
 ```
 
 ## Full description
@@ -153,14 +153,14 @@ Write a script that prints the full description of the table `first_table` from 
 * The database name will be passed as an argument of the `mysql` command
 * You are not allowed to use the `DESCRIBE` or `EXPLAIN` statements
 
-**Solution:** [5-full_table.sql](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0D-SQL_introduction/5-full_table.sql)
+**Solution:** [5-full_table.sql](./5-full_table.sql)
 
 ```
-$ amonkeyprogramer@ubuntu:~/$ cat 5-full_table.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
+$ globalsmile@ubuntu:~/$ cat 5-full_table.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password: 
 Table   Create Table
 first_table CREATE TABLE `first_table` (\n  `id` int(11) DEFAULT NULL,\n  `name` varchar(256) DEFAULT NULL\n) ENGINE=InnoDB DEFAULT CHARSET=latin1
-$ amonkeyprogramer@ubuntu:~/$
+$ globalsmile@ubuntu:~/$
 ```
 
 ## List all in table
@@ -170,12 +170,12 @@ Write a script that lists all rows of the table `first_table` from the database 
 * All fields should be printed
 * The database name will be passed as an argument of the `mysql` command
 
-**Solution:** [6-list_values.sql](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0D-SQL_introduction/6-list_values.sql)
+**Solution:** [6-list_values.sql](./6-list_values.sql)
 
 ```
-$ amonkeyprogramer@ubuntu:~/$ cat 6-list_values.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
+$ globalsmile@ubuntu:~/$ cat 6-list_values.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password: 
-$ amonkeyprogramer@ubuntu:~/$
+$ globalsmile@ubuntu:~/$
 ```
 
 ## First add
@@ -187,26 +187,26 @@ Write a script that inserts a new row in the table `first_table` (database `hbtn
     * `name` = `Holberton School`
 * The database name will be passed as an argument of the `mysql` command
 
-**Solution:** [7-insert_value.sql](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0D-SQL_introduction/7-insert_value.sql)
+**Solution:** [7-insert_value.sql](./7-insert_value.sql)
 
 ```
-$ amonkeyprogramer@ubuntu:~/$ cat 7-insert_value.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
+$ globalsmile@ubuntu:~/$ cat 7-insert_value.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password: 
-$ amonkeyprogramer@ubuntu:~/$ cat 6-list_values.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
-Enter password: 
-id  name
-89  Holberton School
-$ amonkeyprogramer@ubuntu:~/$ cat 7-insert_value.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
-Enter password: 
-$ amonkeyprogramer@ubuntu:~/$ cat 7-insert_value.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
-Enter password: 
-$ amonkeyprogramer@ubuntu:~/$ cat 6-list_values.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
+$ globalsmile@ubuntu:~/$ cat 6-list_values.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password: 
 id  name
 89  Holberton School
+$ globalsmile@ubuntu:~/$ cat 7-insert_value.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
+Enter password: 
+$ globalsmile@ubuntu:~/$ cat 7-insert_value.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
+Enter password: 
+$ globalsmile@ubuntu:~/$ cat 6-list_values.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
+Enter password: 
+id  name
 89  Holberton School
 89  Holberton School
-$ amonkeyprogramer@ubuntu:~/$
+89  Holberton School
+$ globalsmile@ubuntu:~/$
 ```
 
 ## Count 89
@@ -215,13 +215,13 @@ Write a script that displays the number of records with `id = 89` in the table `
 
 * The database name will be passed as an argument of the `mysql` command
 
-**Solution:** [8-count_89.sql](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0D-SQL_introduction/8-count_89.sql)
+**Solution:** [8-count_89.sql](./8-count_89.sql)
 
 ```
-$ amonkeyprogramer@ubuntu:~/$ cat 8-count_89.sql | mysql -hlocalhost -uroot -p hbtn_0c_0 | tail -1
+$ globalsmile@ubuntu:~/$ cat 8-count_89.sql | mysql -hlocalhost -uroot -p hbtn_0c_0 | tail -1
 Enter password: 
 3
-$ amonkeyprogramer@ubuntu:~/$
+$ globalsmile@ubuntu:~/$
 ```
 
 ## Full creation
@@ -241,12 +241,12 @@ Write a script that creates a table `second_table` in the database `hbtn_0c_0` i
     * `id` = 3, `name` = “Bob”, `score` = 14
     * `id` = 4, `name` = “George”, `score` = 8
 
-**Solution:** [9-full_creation.sql](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0D-SQL_introduction/9-full_creation.sql)
+**Solution:** [9-full_creation.sql](./9-full_creation.sql)
 
 ```
-$ amonkeyprogramer@ubuntu:~/$ cat 9-full_creation.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
+$ globalsmile@ubuntu:~/$ cat 9-full_creation.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password: 
-$ amonkeyprogramer@ubuntu:~/$
+$ globalsmile@ubuntu:~/$
 ```
 
 ## List by best
@@ -257,17 +257,17 @@ Write a script that lists all records of the table `second_table` of the databas
 * Records should be ordered by score (top first)
 * The database name will be passed as an argument of the `mysql` command
 
-**Solution:** [10-top_score.sql](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0D-SQL_introduction/10-top_score.sql)
+**Solution:** [10-top_score.sql](./10-top_score.sql)
 
 ```
-$ amonkeyprogramer@ubuntu:~/$ cat 10-top_score.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
+$ globalsmile@ubuntu:~/$ cat 10-top_score.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password: 
 score   name
 14  Bob
 10  John
 8   George
 3   Alex
-$ amonkeyprogramer@ubuntu:~/$
+$ globalsmile@ubuntu:~/$
 ```
 
 ## Select the best
@@ -278,15 +278,15 @@ Write a script that lists all records with a `score >= 10` in the table `second_
 * Records should be ordered by score (top first)
 * The database name will be passed as an argument of the `mysql` command
 
-**Solution:** [11-best_score.sql](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0D-SQL_introduction/11-best_score.sql)
+**Solution:** [11-best_score.sql](./11-best_score.sql)
 
 ```
-$ amonkeyprogramer@ubuntu:~/$ cat 11-best_score.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
+$ globalsmile@ubuntu:~/$ cat 11-best_score.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password: 
 score   name
 14  Bob
 10  John
-$ amonkeyprogramer@ubuntu:~/$
+$ globalsmile@ubuntu:~/$
 ```
 
 ## Cheating is bad
@@ -296,19 +296,19 @@ Write a script that updates the score of Bob to `10` in the table `second_table`
 * You are not allowed to use Bob’s id value, only the `name` field
 * The database name will be passed as an argument of the `mysql` command
 
-**Solution:** [12-no_cheating.sql](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0D-SQL_introduction/12-no_cheating.sql)
+**Solution:** [12-no_cheating.sql](./12-no_cheating.sql)
 
 ```
-$ amonkeyprogramer@ubuntu:~/$ cat 12-no_cheating.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
+$ globalsmile@ubuntu:~/$ cat 12-no_cheating.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password: 
-$ amonkeyprogramer@ubuntu:~/$ cat 10-top_score.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
+$ globalsmile@ubuntu:~/$ cat 10-top_score.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password: 
 score   name
 10  John
 10  Bob
 8   George
 3   Alex
-$ amonkeyprogramer@ubuntu:~/$
+$ globalsmile@ubuntu:~/$
 ```
 
 ## Score too low
@@ -317,18 +317,18 @@ Write a script that removes all records with a `score <= 5` in the table `second
 
 * The database name will be passed as an argument of the `mysql` command
 
-**Solution:** [13-change_class.sql](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0D-SQL_introduction/13-change_class.sql)
+**Solution:** [13-change_class.sql](./13-change_class.sql)
 
 ```
-$ amonkeyprogramer@ubuntu:~/$ cat 13-change_class.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
+$ globalsmile@ubuntu:~/$ cat 13-change_class.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password: 
-$ amonkeyprogramer@ubuntu:~/$ cat 10-top_score.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
+$ globalsmile@ubuntu:~/$ cat 10-top_score.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password: 
 score   name
 10  John
 10  Bob
 8   George
-$ amonkeyprogramer@ubuntu:~/$
+$ globalsmile@ubuntu:~/$
 ```
 
 ## Average
@@ -338,14 +338,14 @@ Write a script that computes the score average of all records in the table `seco
 * The result column name should be `average`
 * The database name will be passed as an argument of the `mysql` command
 
-**Solution:** [14-average.sql](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0D-SQL_introduction/14-average.sql)
+**Solution:** [14-average.sql](./14-average.sql)
 
 ```
-$ amonkeyprogramer@ubuntu:~/$ cat 14-average.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
+$ globalsmile@ubuntu:~/$ cat 14-average.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password: 
 average
 9.3333
-$ amonkeyprogramer@ubuntu:~/$
+$ globalsmile@ubuntu:~/$
 ```
 
 ## Number by score
@@ -358,15 +358,15 @@ Write a script that lists the number of records with the same score in the table
 * The list should be sorted by the number of records (descending)
 * The database name will be passed as an argument to the `mysql` command
 
-**Solution:** [15-groups.sql](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0D-SQL_introduction/15-groups.sql)
+**Solution:** [15-groups.sql](./15-groups.sql)
 
 ```
-$ amonkeyprogramer@ubuntu:~/$ cat 15-groups.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
+$ globalsmile@ubuntu:~/$ cat 15-groups.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password: 
 score   number
 10  2
 8   1
-$ amonkeyprogramer@ubuntu:~/$
+$ globalsmile@ubuntu:~/$
 ```
 
 ## Say my name
@@ -380,17 +380,17 @@ Write a script that lists all records of the table `second_table` of the databas
 
 In this example, new data have been added to the table `second_table`.
 
-**Source:** [16-no_link.sql](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0D-SQL_introduction/16-no_link.sql)
+**Source:** [16-no_link.sql](./16-no_link.sql)
 
 ```
-$ amonkeyprogramer@ubuntu:~/$ cat 16-no_link.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
+$ globalsmile@ubuntu:~/$ cat 16-no_link.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password: 
 score   name
 18  Aria
 12  Aria
 10  John
 10  Bob
-$ amonkeyprogramer@ubuntu:~/$
+$ globalsmile@ubuntu:~/$
 ```
 
 ## Go to UTF8
@@ -403,16 +403,16 @@ You need to convert all of the following to `UTF8`:
 * Table `first_table`
 * Field `name` in `first_table`
 
-**Solution:** [100-move_to_utf8.sql](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0D-SQL_introduction/100-move_to_utf8.sql)
+**Solution:** [100-move_to_utf8.sql](./100-move_to_utf8.sql)
 
 ```
-$ amonkeyprogramer@ubuntu:~/$ cat 100-move_to_utf8.sql | mysql -hlocalhost -uroot -p 
+$ globalsmile@ubuntu:~/$ cat 100-move_to_utf8.sql | mysql -hlocalhost -uroot -p 
 Enter password: 
-$ amonkeyprogramer@ubuntu:~/$ cat 5-full_table.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
+$ globalsmile@ubuntu:~/$ cat 5-full_table.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password: 
 Table   Create Table
 first_table CREATE TABLE `first_table` (\n  `id` int(11) DEFAULT NULL,\n  `name` varchar(256) COLLATE utf8mb4_unicode_ci DEFAULT NULL\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
-$ amonkeyprogramer@ubuntu:~/$
+$ globalsmile@ubuntu:~/$
 ```
 
 ## Temperatures #0
@@ -421,10 +421,10 @@ Import in `hbtn_0c_0` database this table dump: [download](https://s3.amazonaws.
 
 Write a script that displays the average temperature (Fahrenheit) by city ordered by temperature (descending).
 
-**Solution:** [101-avg_temperatures.sql](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0D-SQL_introduction/101-avg_temperatures.sql)
+**Solution:** [101-avg_temperatures.sql](./101-avg_temperatures.sql)
 
 ```
-$ amonkeyprogramer@ubuntu:~/$ cat 101-avg_temperatures.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
+$ globalsmile@ubuntu:~/$ cat 101-avg_temperatures.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password: 
 city    avg_temp
 Chandler    72.8627
@@ -446,7 +446,7 @@ Joliet  68.6716
 Naperville  68.1029
 Tempe   67.0441
 Peoria  66.5392
-$ amonkeyprogramer@ubuntu:~/$
+$ globalsmile@ubuntu:~/$
 ```
 
 ## Temperatures #1
@@ -455,16 +455,16 @@ Import in `hbtn_0c_0` database this table dump: [download](https://s3.amazonaws.
 
 Write a script that displays the top 3 of cities temperature during July and August ordered by temperature (descending)
 
-**Solution:** [102-top_city.sql](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0D-SQL_introduction/102-top_city.sql)
+**Solution:** [102-top_city.sql](./102-top_city.sql)
 
 ```
-$ amonkeyprogramer@ubuntu:~/$ cat 102-top_city.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
+$ globalsmile@ubuntu:~/$ cat 102-top_city.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password: 
 city    avg_temp
 Naperville  76.9412
 San Diego   73.7941
 Sunnyvale   73.2353
-$ amonkeyprogramer@ubuntu:~/$
+$ globalsmile@ubuntu:~/$
 ```
 
 ## Temperatures #2
@@ -473,14 +473,14 @@ Import in `hbtn_0c_0` database this table dump: [download](https://s3.amazonaws.
 
 Write a script that displays the max temperature of each state (ordered by State name).
 
-**Solution:** [103-max_state.sql](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0D-SQL_introduction/103-max_state.sql)
+**Solution:** [103-max_state.sql](./103-max_state.sql)
 
 ```
-$ amonkeyprogramer@ubuntu:~/$ cat 103-max_state.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
+$ globalsmile@ubuntu:~/$ cat 103-max_state.sql | mysql -hlocalhost -uroot -p hbtn_0c_0
 Enter password: 
 state   max_temp
 AZ  110
 CA  110
 IL  110
-$ amonkeyprogramer@ubuntu:~/$
+$ globalsmile@ubuntu:~/$
 ```
