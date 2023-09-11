@@ -28,14 +28,14 @@ Write a script that prints “Javascript is amazing”:
 * You must use `console.log(...)` to print all output
 * You are not allowed to use `var`
 
-**Solution:** [0-javascript_is_amazing.js](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x12-javascript-warm_up/0-javascript_is_amazing.js)
+**Solution:** [0-javascript_is_amazing.js](./0x12-javascript-warm_up/0-javascript_is_amazing.js)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./0-javascript_is_amazing.js 
+$ globalsmile@ubuntu:~/0x12$ ./0-javascript_is_amazing.js 
 Javascript is amazing
-$ amonkeyprogrammer@ubuntu:~/0x12$ 
-$ amonkeyprogrammer@ubuntu:~/0x12$ semistandard ./0-javascript_is_amazing.js 
-$ amonkeyprogrammer@ubuntu:~/0x12$
+$ globalsmile@ubuntu:~/0x12$ 
+$ globalsmile@ubuntu:~/0x12$ semistandard ./0-javascript_is_amazing.js 
+$ globalsmile@ubuntu:~/0x12$
 ```
 
 ## 3 languages
@@ -48,14 +48,14 @@ Write a script that prints 3 lines:
 * You must use `console.log(...)` to print all output
 * You are not allowed to use `var`
 
-**Solution:** [1-multi_languages.js](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x12-javascript-warm_up/1-multi_languages.js)
+**Solution:** [1-multi_languages.js](./0x12-javascript-warm_up/1-multi_languages.js)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./1-multi_languages.js 
+$ globalsmile@ubuntu:~/0x12$ ./1-multi_languages.js 
 C is fun
 Python is cool
 Javascript is amazing
-$ amonkeyprogrammer@ubuntu:~/0x12$
+$ globalsmile@ubuntu:~/0x12$
 ```
 
 ## Arguments
@@ -68,16 +68,16 @@ Write a script that prints a message depending of the number of arguments passed
 * You must use `console.log(...)` to print all output
 * You are not allowed to use `var`
 
-**Solution:** [2-arguments.js](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x12-javascript-warm_up/2-arguments.js)
+**Solution:** [2-arguments.js](./0x12-javascript-warm_up/2-arguments.js)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./2-arguments.js 
+$ globalsmile@ubuntu:~/0x12$ ./2-arguments.js 
 No argument
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./2-arguments.js Holberton
+$ globalsmile@ubuntu:~/0x12$ ./2-arguments.js Holberton
 Argument found
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./2-arguments.js Holberton School
+$ globalsmile@ubuntu:~/0x12$ ./2-arguments.js Holberton School
 Arguments found
-$ amonkeyprogrammer@ubuntu:~/0x12$
+$ globalsmile@ubuntu:~/0x12$
 ```
 
 ## Value of my argument
@@ -89,14 +89,14 @@ Write a script that prints the first argument passed to it:
 * You are not allowed to use `var`
 * You are not allowed to use `length`
 
-**Solution:** [3-value_argument.js](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x12-javascript-warm_up/3-value_argument.js)
+**Solution:** [3-value_argument.js](./0x12-javascript-warm_up/3-value_argument.js)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./3-value_argument.js 
+$ globalsmile@ubuntu:~/0x12$ ./3-value_argument.js 
 No argument
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./3-value_argument.js Holberton
+$ globalsmile@ubuntu:~/0x12$ ./3-value_argument.js Holberton
 Holberton
-$ amonkeyprogrammer@ubuntu:~/0x12$
+$ globalsmile@ubuntu:~/0x12$
 ```
 
 ## Create a sentence
@@ -106,16 +106,16 @@ Write a script that prints two arguments passed to it, in the following format: 
 * You must use `console.log(...)` to print all output
 * You are not allowed to use `var`
 
-**Solution:** [4-concat.js](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x12-javascript-warm_up/4-concat.js)
+**Solution:** [4-concat.js](./0x12-javascript-warm_up/4-concat.js)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./4-concat.js c cool
+$ globalsmile@ubuntu:~/0x12$ ./4-concat.js c cool
 c is cool
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./4-concat.js c 
+$ globalsmile@ubuntu:~/0x12$ ./4-concat.js c 
 c is undefined
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./4-concat.js
+$ globalsmile@ubuntu:~/0x12$ ./4-concat.js
 undefined is undefined
-$ amonkeyprogrammer@ubuntu:~/0x12$
+$ globalsmile@ubuntu:~/0x12$
 ```
 
 ## An Integer
@@ -127,20 +127,20 @@ Write a script that prints `My number: <first argument converted in integer>` if
 * You are not allowed to use `var`
 * You are not allowed to use `try/catch`
 
-**Solution:** [5-to_integer.js](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x12-javascript-warm_up/5-to_integer.js)
+**Solution:** [5-to_integer.js](./0x12-javascript-warm_up/5-to_integer.js)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./5-to_integer.js 
+$ globalsmile@ubuntu:~/0x12$ ./5-to_integer.js 
 Not a number
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./5-to_integer.js 89
+$ globalsmile@ubuntu:~/0x12$ ./5-to_integer.js 89
 My number: 89
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./5-to_integer.js "89"
+$ globalsmile@ubuntu:~/0x12$ ./5-to_integer.js "89"
 My number: 89
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./5-to_integer.js 89.89
+$ globalsmile@ubuntu:~/0x12$ ./5-to_integer.js 89.89
 My number: 89
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./5-to_integer.js Holberton
+$ globalsmile@ubuntu:~/0x12$ ./5-to_integer.js Holberton
 Not a number
-$ amonkeyprogrammer@ubuntu:~/0x12$
+$ globalsmile@ubuntu:~/0x12$
 ```
 
 ## Loop to languages
@@ -156,14 +156,14 @@ Write a script that prints 3 lines: (like `1-multi_languages.js`) but by using a
 * You can use only one `console.log`
 * You must use a loop (`while`, `for`, etc.)
 
-**Solution:** [6-multi_languages_loop.js](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x12-javascript-warm_up/6-multi_languages_loop.js)
+**Solution:** [6-multi_languages_loop.js](./0x12-javascript-warm_up/6-multi_languages_loop.js)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./6-multi_languages_loop.js 
+$ globalsmile@ubuntu:~/0x12$ ./6-multi_languages_loop.js 
 C is fun
 Python is cool
 Javascript is amazing
-$ amonkeyprogrammer@ubuntu:~/0x12$
+$ globalsmile@ubuntu:~/0x12$
 ```
 
 ## I love C
@@ -177,22 +177,22 @@ Write a script that prints `x` times “C is fun”
 * You can use only two `console.log`
 * You must use a loop (`while`, `for`, etc.)
 
-**Solution:** [7-multi_c.js](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x12-javascript-warm_up/7-multi_c.js)
+**Solution:** [7-multi_c.js](./0x12-javascript-warm_up/7-multi_c.js)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./7-multi_c.js 2
+$ globalsmile@ubuntu:~/0x12$ ./7-multi_c.js 2
 C is fun
 C is fun
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./7-multi_c.js 5
+$ globalsmile@ubuntu:~/0x12$ ./7-multi_c.js 5
 C is fun
 C is fun
 C is fun
 C is fun
 C is fun
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./7-multi_c.js 
+$ globalsmile@ubuntu:~/0x12$ ./7-multi_c.js 
 Missing number of occurrences
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./7-multi_c.js -3
-$ amonkeyprogrammer@ubuntu:~/0x12$
+$ globalsmile@ubuntu:~/0x12$ ./7-multi_c.js -3
+$ globalsmile@ubuntu:~/0x12$
 ```
 
 ## Square
@@ -206,25 +206,25 @@ Write a script that prints a square
 * You are not allowed to use `var`
 * You must use a loop (`while`, `for`, etc.)
 
-**Solution:** [8-square.js](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x12-javascript-warm_up/8-square.js)
+**Solution:** [8-square.js](./0x12-javascript-warm_up/8-square.js)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./8-square.js
+$ globalsmile@ubuntu:~/0x12$ ./8-square.js
 Missing size
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./8-square.js Holberton
+$ globalsmile@ubuntu:~/0x12$ ./8-square.js Holberton
 Missing size
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./8-square.js 2
+$ globalsmile@ubuntu:~/0x12$ ./8-square.js 2
 XX
 XX
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./8-square.js 6
+$ globalsmile@ubuntu:~/0x12$ ./8-square.js 6
 XXXXXX
 XXXXXX
 XXXXXX
 XXXXXX
 XXXXXX
 XXXXXX
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./8-square.js -3
-$ amonkeyprogrammer@ubuntu:~/0x12$
+$ globalsmile@ubuntu:~/0x12$ ./8-square.js -3
+$ globalsmile@ubuntu:~/0x12$
 ```
 
 ## Add
@@ -237,18 +237,18 @@ Write a script that prints the addition of 2 integers
 * You must use `console.log(...)` to print all output
 * You are not allowed to use `var`
 
-**Solution:** [9-add.js](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x12-javascript-warm_up/9-add.js)
+**Solution:** [9-add.js](./0x12-javascript-warm_up/9-add.js)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./9-add.js 
+$ globalsmile@ubuntu:~/0x12$ ./9-add.js 
 NaN
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./9-add.js 1
+$ globalsmile@ubuntu:~/0x12$ ./9-add.js 1
 NaN
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./9-add.js 1 7
+$ globalsmile@ubuntu:~/0x12$ ./9-add.js 1 7
 8
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./9-add.js 13 89
+$ globalsmile@ubuntu:~/0x12$ ./9-add.js 13 89
 102
-$ amonkeyprogrammer@ubuntu:~/0x12$
+$ globalsmile@ubuntu:~/0x12$
 ```
 
 ## Factorial
@@ -262,18 +262,18 @@ Write a script that computes and prints a factorial
 * You must use `console.log(...)` to print all output
 * You are not allowed to use `var`
 
-**Solution:** [10-factorial.js](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x12-javascript-warm_up/10-factorial.js)
+**Solution:** [10-factorial.js](./0x12-javascript-warm_up/10-factorial.js)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./10-factorial.js 
+$ globalsmile@ubuntu:~/0x12$ ./10-factorial.js 
 1
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./10-factorial.js 3
+$ globalsmile@ubuntu:~/0x12$ ./10-factorial.js 3
 6
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./10-factorial.js 89
+$ globalsmile@ubuntu:~/0x12$ ./10-factorial.js 89
 1.6507955160908452e+136
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./10-factorial.js 333
+$ globalsmile@ubuntu:~/0x12$ ./10-factorial.js 333
 Infinity
-$ amonkeyprogrammer@ubuntu:~/0x12$
+$ globalsmile@ubuntu:~/0x12$
 ```
 
 ## Second biggest!
@@ -286,16 +286,16 @@ Write a script that searches the second biggest integer in the list of arguments
 * You must use `console.log(...)` to print all output
 * You are not allowed to use `var`
 
-**Solution:** [11-second_biggest.js](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x12-javascript-warm_up/11-second_biggest.js)
+**Solution:** [11-second_biggest.js](./0x12-javascript-warm_up/11-second_biggest.js)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./11-second_biggest.js 
+$ globalsmile@ubuntu:~/0x12$ ./11-second_biggest.js 
 0
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./11-second_biggest.js 1
+$ globalsmile@ubuntu:~/0x12$ ./11-second_biggest.js 1
 0
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./11-second_biggest.js 4 2 5 3 0 -3
+$ globalsmile@ubuntu:~/0x12$ ./11-second_biggest.js 4 2 5 3 0 -3
 4
-$ amonkeyprogrammer@ubuntu:~/0x12$
+$ globalsmile@ubuntu:~/0x12$
 ```
 
 ## Object
@@ -304,10 +304,10 @@ Update this script to replace the value `12` with `89`:
 
 * You are not allowed to use `var`
 
-**Solution:** [12-object.js](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x12-javascript-warm_up/12-object.js)
+**Solution:** [12-object.js](./0x12-javascript-warm_up/12-object.js)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x12$ cat 12-object.js
+$ globalsmile@ubuntu:~/0x12$ cat 12-object.js
 #!/usr/bin/node
 const myObject = {
   type: 'object',
@@ -319,10 +319,10 @@ YOUR CODE HERE
 */
 console.log(myObject);
 
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./12-object.js
+$ globalsmile@ubuntu:~/0x12$ ./12-object.js
 { type: 'object', value: 12 }
 { type: 'object', value: 89 }
-$ amonkeyprogrammer@ubuntu:~/0x12$
+$ globalsmile@ubuntu:~/0x12$
 ```
 
 ## Add file
@@ -333,33 +333,33 @@ Write a function that returns the addition of 2 integers.
 * The name of the function must be `add`
 * You are not allowed to use `var`
 
-**Solution:** [13-add.js](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x12-javascript-warm_up/13-add.js)
+**Solution:** [13-add.js](./0x12-javascript-warm_up/13-add.js)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x12$ cat 13-main.js
+$ globalsmile@ubuntu:~/0x12$ cat 13-main.js
 #!/usr/bin/node
 const add = require('./13-add').add;
 console.log(add(3, 5));
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./13-main.js
+$ globalsmile@ubuntu:~/0x12$ ./13-main.js
 8
-$ amonkeyprogrammer@ubuntu:~/0x12$
+$ globalsmile@ubuntu:~/0x12$
 ```
 
 ## Const or not const
 
 Write a file that modifies the value of `myVar` to `333`
 
-**Solution:** [100-let_me_const.js](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x12-javascript-warm_up/100-let_me_const.js)
+**Solution:** [100-let_me_const.js](./0x12-javascript-warm_up/100-let_me_const.js)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x12$ cat 100-main.js
+$ globalsmile@ubuntu:~/0x12$ cat 100-main.js
 #!/usr/bin/node
 myVar = 89;
 require('./100-let_me_const')
 console.log(myVar);
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./100-main.js
+$ globalsmile@ubuntu:~/0x12$ ./100-main.js
 333
-$ amonkeyprogrammer@ubuntu:~/0x12$
+$ globalsmile@ubuntu:~/0x12$
 ```
 
 ## Call me Moby
@@ -370,20 +370,20 @@ Write a function that executes `x` times a function.
 * Prototype: `function (x, theFunction)`
 * You are not allowed to use `var`
 
-**Solution:** [101-call_me_moby.js](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x12-javascript-warm_up/101-call_me_moby.js)
+**Solution:** [101-call_me_moby.js](./0x12-javascript-warm_up/101-call_me_moby.js)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x12$ cat 101-main.js
+$ globalsmile@ubuntu:~/0x12$ cat 101-main.js
 #!/usr/bin/node
 const callMeMoby = require('./101-call_me_moby').callMeMoby;
 callMeMoby(3, function () {
   console.log('C is fun');
 });
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./101-main.js
+$ globalsmile@ubuntu:~/0x12$ ./101-main.js
 C is fun
 C is fun
 C is fun
-$ amonkeyprogrammer@ubuntu:~/0x12$ 
+$ globalsmile@ubuntu:~/0x12$ 
 ```
 
 ## Add me maybe
@@ -394,18 +394,18 @@ Write a function that increments and calls a function.
 * Prototype: `function (number, theFunction)`
 * You are not allowed to use `var`
 
-**Solution:** [102-add_me_maybe.js](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x12-javascript-warm_up/102-add_me_maybe.js)
+**Solution:** [102-add_me_maybe.js](./0x12-javascript-warm_up/102-add_me_maybe.js)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x12$ cat 102-main.js
+$ globalsmile@ubuntu:~/0x12$ cat 102-main.js
 #!/usr/bin/node
 const addMeMaybe = require('./102-add_me_maybe').addMeMaybe;
 addMeMaybe(4, function (nb) {
   console.log('New value: ' + nb);
 });
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./102-main.js
+$ globalsmile@ubuntu:~/0x12$ ./102-main.js
 New value: 5
-$ amonkeyprogrammer@ubuntu:~/0x12$ 
+$ globalsmile@ubuntu:~/0x12$ 
 ```
 
 ## Increment object
@@ -414,10 +414,10 @@ Update this script by adding a new function `incr` that increments the integer `
 
 * You are not allowed to use `var`
 
-**Solution:** [103-object_fct.js](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x12-javascript-warm_up/103-object_fct.js)
+**Solution:** [103-object_fct.js](./0x12-javascript-warm_up/103-object_fct.js)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x12$ cat 103-object_fct.js
+$ globalsmile@ubuntu:~/0x12$ cat 103-object_fct.js
 #!/usr/bin/node
 const myObject = {
   type: 'object',
@@ -434,10 +434,10 @@ console.log(myObject);
 myObject.incr();
 console.log(myObject);
 
-$ amonkeyprogrammer@ubuntu:~/0x12$ ./103-object_fct.js 
+$ globalsmile@ubuntu:~/0x12$ ./103-object_fct.js 
 { type: 'object', value: 12 }
 { type: 'object', value: 13, incr: [Function] }
 { type: 'object', value: 14, incr: [Function] }
 { type: 'object', value: 15, incr: [Function] }
-$ amonkeyprogrammer@ubuntu:~/0x12$
+$ globalsmile@ubuntu:~/0x12$
 ```
