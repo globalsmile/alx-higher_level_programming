@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Script lists all City objects from the database hbtn_0e_101_usa
+Script lists all City objects 
+from the database hbtn_0e_101_usa
 """
 from sqlalchemy import create_engine
 from sqlalchemy import MetaData
