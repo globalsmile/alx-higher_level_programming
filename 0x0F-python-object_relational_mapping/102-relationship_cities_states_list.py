@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Script lists all City objects 
+Script lists all City objects
 from the database hbtn_0e_101_usa
 """
 from sqlalchemy import create_engine
@@ -11,7 +11,7 @@ from relationship_city import City
 import sys
 if __name__ == "__main__":
     """
-    Access the database and lists all 
+    Access the database and lists all
     City objects from the database hbtn_0e_101_usa
     """
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(
