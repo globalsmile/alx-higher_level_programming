@@ -21,10 +21,10 @@ Write a script that lists all `states` from the database `hbtn_0e_0_usa`:
 * Results must be displayed as they are in the example below
 * Your code should not be executed when imported
 
-**Solution:** [0-select_states.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/0-select_states.py)
+**Solution:** [0-select_states.py](./0x0F-python-object_relational_mapping/0-select_states.py)
 
 ```
-$ amonkeyprogramer@ubuntu:~/0x0F$ cat 0-select_states.sql
+$ globalsmile@ubuntu:~/0x0F$ cat 0-select_states.sql
 -- Create states table in hbtn_0e_0_usa with some data
 CREATE DATABASE IF NOT EXISTS hbtn_0e_0_usa;
 USE hbtn_0e_0_usa;
@@ -35,15 +35,15 @@ CREATE TABLE IF NOT EXISTS states (
 );
 INSERT INTO states (name) VALUES ("California"), ("Arizona"), ("Texas"), ("New York"), ("Nevada");
 
-$ amonkeyprogramer@ubuntu:~/0x0F$ cat 0-select_states.sql | mysql -uroot -p
+$ globalsmile@ubuntu:~/0x0F$ cat 0-select_states.sql | mysql -uroot -p
 Enter password: 
-$ amonkeyprogramer@ubuntu:~/0x0F$ ./0-select_states.py root root hbtn_0e_0_usa
+$ globalsmile@ubuntu:~/0x0F$ ./0-select_states.py root root hbtn_0e_0_usa
 (1, 'California')
 (2, 'Arizona')
 (3, 'Texas')
 (4, 'New York')
 (5, 'Nevada')
-$ amonkeyprogramer@ubuntu:~/0x0F$
+$ globalsmile@ubuntu:~/0x0F$
 ```
 
 ## Filter states
@@ -57,10 +57,10 @@ Write a script that lists all `states` with a `name` starting with `N` (upper N)
 * Results must be displayed as they are in the example below
 * Your code should not be executed when imported
 
-**Solution:** [1-filter_states.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/1-filter_states.py)
+**Solution:** [1-filter_states.py](./0x0F-python-object_relational_mapping/1-filter_states.py)
 
 ```
-$ amonkeyprogramer@ubuntu:~/0x0F$ cat 0-select_states.sql
+$ globalsmile@ubuntu:~/0x0F$ cat 0-select_states.sql
 -- Create states table in hbtn_0e_0_usa with some data
 CREATE DATABASE IF NOT EXISTS hbtn_0e_0_usa;
 USE hbtn_0e_0_usa;
@@ -71,12 +71,12 @@ CREATE TABLE IF NOT EXISTS states (
 );
 INSERT INTO states (name) VALUES ("California"), ("Arizona"), ("Texas"), ("New York"), ("Nevada");
 
-$ amonkeyprogramer@ubuntu:~/0x0F$ cat 0-select_states.sql | mysql -uroot -p
+$ globalsmile@ubuntu:~/0x0F$ cat 0-select_states.sql | mysql -uroot -p
 Enter password: 
-$ amonkeyprogramer@ubuntu:~/0x0F$ ./1-filter_states.py root root hbtn_0e_0_usa
+$ globalsmile@ubuntu:~/0x0F$ ./1-filter_states.py root root hbtn_0e_0_usa
 (4, 'New York')
 (5, 'Nevada')
-$ amonkeyprogramer@ubuntu:~/0x0F$
+$ globalsmile@ubuntu:~/0x0F$
 ```
 
 ## Filter states by user input
@@ -91,10 +91,10 @@ Write a script that takes in an argument and displays all values in the `states`
 * Results must be displayed as they are in the example below
 * Your code should not be executed when imported
 
-**Solution:** [2-my_filter_states.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/2-my_filter_states.py)
+**Solution:** [2-my_filter_states.py](./0x0F-python-object_relational_mapping/2-my_filter_states.py)
 
 ```
-$ amonkeyprogramer@ubuntu:~/0x0F$ cat 0-select_states.sql
+$ globalsmile@ubuntu:~/0x0F$ cat 0-select_states.sql
 -- Create states table in hbtn_0e_0_usa with some data
 CREATE DATABASE IF NOT EXISTS hbtn_0e_0_usa;
 USE hbtn_0e_0_usa;
@@ -105,11 +105,11 @@ CREATE TABLE IF NOT EXISTS states (
 );
 INSERT INTO states (name) VALUES ("California"), ("Arizona"), ("Texas"), ("New York"), ("Nevada");
 
-$ amonkeyprogramer@ubuntu:~/0x0F$ cat 0-select_states.sql | mysql -uroot -p
+$ globalsmile@ubuntu:~/0x0F$ cat 0-select_states.sql | mysql -uroot -p
 Enter password: 
-$ amonkeyprogramer@ubuntu:~/0x0F$ ./2-my_filter_states.py root root hbtn_0e_0_usa 'Arizona'
+$ globalsmile@ubuntu:~/0x0F$ ./2-my_filter_states.py root root hbtn_0e_0_usa 'Arizona'
 (2, 'Arizona')
-$ amonkeyprogramer@ubuntu:~/0x0F$
+$ globalsmile@ubuntu:~/0x0F$
 ```
 
 ## Filter states by user input
@@ -124,10 +124,10 @@ Write a script that takes in an argument and displays all values in the states t
 * Results must be displayed as they are in the example below
 * Your code should not be executed when imported
 
-**Solution:** [2-my_filter_states.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/2-my_filter_states.py)
+**Solution:** [2-my_filter_states.py](./0x0F-python-object_relational_mapping/2-my_filter_states.py)
 
 ```
-$ amonkeyprogramer@ubuntu:~/0x0F$ cat 0-select_states.sql
+$ globalsmile@ubuntu:~/0x0F$ cat 0-select_states.sql
 -- Create states table in hbtn_0e_0_usa with some data
 CREATE DATABASE IF NOT EXISTS hbtn_0e_0_usa;
 USE hbtn_0e_0_usa;
@@ -138,11 +138,11 @@ CREATE TABLE IF NOT EXISTS states (
 );
 INSERT INTO states (name) VALUES ("California"), ("Arizona"), ("Texas"), ("New York"), ("Nevada");
 
-$ amonkeyprogramer@ubuntu:~/0x0F$ cat 0-select_states.sql | mysql -uroot -p
+$ globalsmile@ubuntu:~/0x0F$ cat 0-select_states.sql | mysql -uroot -p
 Enter password: 
-$ amonkeyprogramer@ubuntu:~/0x0F$ ./2-my_filter_states.py root root hbtn_0e_0_usa 'Arizona'
+$ globalsmile@ubuntu:~/0x0F$ ./2-my_filter_states.py root root hbtn_0e_0_usa 'Arizona'
 (2, 'Arizona')
-$ amonkeyprogramer@ubuntu:~/0x0F$
+$ globalsmile@ubuntu:~/0x0F$
 ```
 
 ## SQL Injection...
@@ -156,10 +156,10 @@ Once again, write a script that takes in arguments and displays all values in th
 * Results must be displayed as they are in the example below
 * Your code should not be executed when imported
 
-**Solution:** [3-my_safe_filter_states.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/3-my_safe_filter_states.py)
+**Solution:** [3-my_safe_filter_states.py](./0x0F-python-object_relational_mapping/3-my_safe_filter_states.py)
 
 ```
-$ amonkeyprogramer@ubuntu:~/0x0F$ cat 0-select_states.sql
+$ globalsmile@ubuntu:~/0x0F$ cat 0-select_states.sql
 -- Create states table in hbtn_0e_0_usa with some data
 CREATE DATABASE IF NOT EXISTS hbtn_0e_0_usa;
 USE hbtn_0e_0_usa;
@@ -170,11 +170,11 @@ CREATE TABLE IF NOT EXISTS states (
 );
 INSERT INTO states (name) VALUES ("California"), ("Arizona"), ("Texas"), ("New York"), ("Nevada");
 
-$ amonkeyprogramer@ubuntu:~/0x0F$ cat 0-select_states.sql | mysql -uroot -p
+$ globalsmile@ubuntu:~/0x0F$ cat 0-select_states.sql | mysql -uroot -p
 Enter password: 
-$ amonkeyprogramer@ubuntu:~/0x0F$ ./3-my_safe_filter_states.py root root hbtn_0e_0_usa 'Arizona'
+$ globalsmile@ubuntu:~/0x0F$ ./3-my_safe_filter_states.py root root hbtn_0e_0_usa 'Arizona'
 (2, 'Arizona')
-$ amonkeyprogramer@ubuntu:~/0x0F$
+$ globalsmile@ubuntu:~/0x0F$
 ```
 
 ## Cities by states
@@ -189,10 +189,10 @@ Write a script that lists all `cities` from the database `hbtn_0e_4_usa`
 * Results must be displayed as they are in the example below
 * Your code should not be executed when imported
 
-**Solution:** [4-cities_by_state.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/4-cities_by_state.py)
+**Solution:** [4-cities_by_state.py](./0x0F-python-object_relational_mapping/4-cities_by_state.py)
 
 ```
-$ amonkeyprogramer@ubuntu:~/0x0F$ cat 4-cities_by_state.sql
+$ globalsmile@ubuntu:~/0x0F$ cat 4-cities_by_state.sql
 -- Create states table in hbtn_0e_4_usa with some data
 CREATE DATABASE IF NOT EXISTS hbtn_0e_4_usa;
 USE hbtn_0e_4_usa;
@@ -216,9 +216,9 @@ INSERT INTO cities (state_id, name) VALUES (3, "Dallas"), (3, "Houston"), (3, "A
 INSERT INTO cities (state_id, name) VALUES (4, "New York");
 INSERT INTO cities (state_id, name) VALUES (5, "Las Vegas"), (5, "Reno"), (5, "Henderson"), (5, "Carson City");
 
-$ amonkeyprogramer@ubuntu:~/0x0F$ cat 4-cities_by_state.sql | mysql -uroot -p
+$ globalsmile@ubuntu:~/0x0F$ cat 4-cities_by_state.sql | mysql -uroot -p
 Enter password: 
-$ amonkeyprogramer@ubuntu:~/0x0F$ ./4-cities_by_state.py root root hbtn_0e_4_usa
+$ globalsmile@ubuntu:~/0x0F$ ./4-cities_by_state.py root root hbtn_0e_4_usa
 (1, 'San Francisco', 'California')
 (2, 'San Jose', 'California')
 (3, 'Los Angeles', 'California')
@@ -234,7 +234,7 @@ $ amonkeyprogramer@ubuntu:~/0x0F$ ./4-cities_by_state.py root root hbtn_0e_4_usa
 (13, 'Reno', 'Nevada')
 (14, 'Henderson', 'Nevada')
 (15, 'Carson City', 'Nevada')
-$ amonkeyprogramer@ubuntu:~/0x0F$
+$ globalsmile@ubuntu:~/0x0F$
 ```
 
 ## All cities by state
@@ -249,10 +249,10 @@ Write a script that takes in the name of a state as an argument and lists all `c
 * The results must be displayed as they are in the example below
 * Your code should not be executed when imported
 
-**Solution:** [5-filter_cities.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/5-filter_cities.py)
+**Solution:** [5-filter_cities.py](./0x0F-python-object_relational_mapping/5-filter_cities.py)
 
 ```
-$ amonkeyprogramer@ubuntu:~/0x0F$ cat 4-cities_by_state.sql
+$ globalsmile@ubuntu:~/0x0F$ cat 4-cities_by_state.sql
 -- Create states table in hbtn_0e_4_usa with some data
 CREATE DATABASE IF NOT EXISTS hbtn_0e_4_usa;
 USE hbtn_0e_4_usa;
@@ -276,15 +276,15 @@ INSERT INTO cities (state_id, name) VALUES (3, "Dallas"), (3, "Houston"), (3, "A
 INSERT INTO cities (state_id, name) VALUES (4, "New York");
 INSERT INTO cities (state_id, name) VALUES (5, "Las Vegas"), (5, "Reno"), (5, "Henderson"), (5, "Carson City");
 
-$ amonkeyprogramer@ubuntu:~/0x0F$ ./5-filter_cities.py root root hbtn_0e_4_usa Texas
+$ globalsmile@ubuntu:~/0x0F$ ./5-filter_cities.py root root hbtn_0e_4_usa Texas
 
-$ amonkeyprogramer@ubuntu:~/0x0F$ cat 4-cities_by_state.sql | mysql -uroot -p
+$ globalsmile@ubuntu:~/0x0F$ cat 4-cities_by_state.sql | mysql -uroot -p
 Enter password: 
-$ amonkeyprogramer@ubuntu:~/0x0F$ ./5-filter_cities.py root root hbtn_0e_4_usa Texas
+$ globalsmile@ubuntu:~/0x0F$ ./5-filter_cities.py root root hbtn_0e_4_usa Texas
 Dallas, Houston, Austin
-$ amonkeyprogramer@ubuntu:~/0x0F$ ./5-filter_cities.py root root hbtn_0e_4_usa Hawaii
+$ globalsmile@ubuntu:~/0x0F$ ./5-filter_cities.py root root hbtn_0e_4_usa Hawaii
 
-$ amonkeyprogramer@ubuntu:~/0x0F$
+$ globalsmile@ubuntu:~/0x0F$
 ```
 
 ## First state model
@@ -300,19 +300,19 @@ Write a python file that contains the class definition of a `State` and an insta
 * Your script should connect to a MySQL server running on `localhost` at port `3306`
 * **WARNING:** all classes who inherit from `Base` **must** be imported before calling `Base.metadata.create_all(engine)`
 
-**Solution:** [model_state.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/model_state.py)
+**Solution:** [model_state.py](./0x0F-python-object_relational_mapping/model_state.py)
 
 ```
-$ amonkeyprogramer@ubuntu:~/0x0F$ cat 6-model_state.sql
+$ globalsmile@ubuntu:~/0x0F$ cat 6-model_state.sql
 -- Create database hbtn_0e_6_usa
 CREATE DATABASE IF NOT EXISTS hbtn_0e_6_usa;
 USE hbtn_0e_6_usa;
 SHOW CREATE TABLE states;
 
-$ amonkeyprogramer@ubuntu:~/0x0F$ cat 6-model_state.sql | mysql -uroot -p
+$ globalsmile@ubuntu:~/0x0F$ cat 6-model_state.sql | mysql -uroot -p
 Enter password: 
 ERROR 1146 (42S02) at line 4: Table 'hbtn_0e_6_usa.states' doesn't exist
-$ amonkeyprogramer@ubuntu:~/0x0F$ cat 6-model_state.py
+$ globalsmile@ubuntu:~/0x0F$ cat 6-model_state.py
 #!/usr/bin/python3
 """Start link class to table in database 
 """
@@ -325,12 +325,12 @@ if __name__ == "__main__":
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(sys.argv[1], sys.argv[2], sys.argv[3]), pool_pre_ping=True)
     Base.metadata.create_all(engine)
 
-$ amonkeyprogramer@ubuntu:~/0x0F$ ./6-model_state.py root root hbtn_0e_6_usa
-$ amonkeyprogramer@ubuntu:~/0x0F$ cat 6-model_state.sql | mysql -uroot -p
+$ globalsmile@ubuntu:~/0x0F$ ./6-model_state.py root root hbtn_0e_6_usa
+$ globalsmile@ubuntu:~/0x0F$ cat 6-model_state.sql | mysql -uroot -p
 Enter password: 
 Table   Create Table
 states  CREATE TABLE `states` (\n  `id` int(11) NOT NULL AUTO_INCREMENT,\n  `name` varchar(128) NOT NULL,\n  PRIMARY KEY (`id`)\n) ENGINE=InnoDB DEFAULT CHARSET=latin1
-$ amonkeyprogramer@ubuntu:~/0x0F$
+$ globalsmile@ubuntu:~/0x0F$
 ```
 
 ## All states via SQLAlchemy
@@ -345,22 +345,22 @@ Write a script that lists all `State` objects from the database `hbtn_0e_6_usa`
 * The results must be displayed as they are in the example below
 * Your code should not be executed when imported
 
-**Solution:** [7-model_state_fetch_all.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/7-model_state_fetch_all.py)
+**Solution:** [7-model_state_fetch_all.py](./0x0F-python-object_relational_mapping/7-model_state_fetch_all.py)
 
 ```
-$ amonkeyprogramer@ubuntu:~/0x0F$ cat 7-model_state_fetch_all.sql
+$ globalsmile@ubuntu:~/0x0F$ cat 7-model_state_fetch_all.sql
 -- Insert states
 INSERT INTO states (name) VALUES ("California"), ("Arizona"), ("Texas"), ("New York"), ("Nevada");
 
-$ amonkeyprogramer@ubuntu:~/0x0F$ cat 7-model_state_fetch_all.sql | mysql -uroot -p hbtn_0e_6_usa
+$ globalsmile@ubuntu:~/0x0F$ cat 7-model_state_fetch_all.sql | mysql -uroot -p hbtn_0e_6_usa
 Enter password: 
-$ amonkeyprogramer@ubuntu:~/0x0F$ ./7-model_state_fetch_all.py root root hbtn_0e_6_usa
+$ globalsmile@ubuntu:~/0x0F$ ./7-model_state_fetch_all.py root root hbtn_0e_6_usa
 1: California
 2: Arizona
 3: Texas
 4: New York
 5: Nevada
-$ amonkeyprogramer@ubuntu:~/0x0F$
+$ globalsmile@ubuntu:~/0x0F$
 ```
 
 ## First state 
@@ -377,12 +377,12 @@ Write a script that prints the first `State` object from the database `hbtn_0e_6
 * If the table `states` is empty, print `Nothing` followed by a new line
 * Your code should not be executed when imported
 
-**Solution:** [8-model_state_fetch_first.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/8-model_state_fetch_first.py)
+**Solution:** [8-model_state_fetch_first.py](./0x0F-python-object_relational_mapping/8-model_state_fetch_first.py)
 
 ```
-$ amonkeyprogramer@ubuntu:~/0x0F$ ./8-model_state_fetch_first.py root root hbtn_0e_6_usa
+$ globalsmile@ubuntu:~/0x0F$ ./8-model_state_fetch_first.py root root hbtn_0e_6_usa
 1: California
-$ amonkeyprogramer@ubuntu:~/0x0F$
+$ globalsmile@ubuntu:~/0x0F$
 ```
 
 ## Contains `a`
@@ -397,15 +397,15 @@ Write a script that lists all `State` objects that contain the letter `a` from t
 * The results must be displayed as they are in the example below
 * Your code should not be executed when imported
 
-**Solution:** [9-model_state_filter_a.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/9-model_state_filter_a.py)
+**Solution:** [9-model_state_filter_a.py](./0x0F-python-object_relational_mapping/9-model_state_filter_a.py)
 
 ```
-$ amonkeyprogramer@ubuntu:~/0x0F$ ./9-model_state_filter_a.py root root hbtn_0e_6_usa
+$ globalsmile@ubuntu:~/0x0F$ ./9-model_state_filter_a.py root root hbtn_0e_6_usa
 1: California
 2: Arizona
 3: Texas
 5: Nevada
-$ amonkeyprogramer@ubuntu:~/0x0F$
+$ globalsmile@ubuntu:~/0x0F$
 ```
 
 ## Get a state
@@ -421,14 +421,14 @@ Write a script that prints the State object with the name passed as argument fro
 * If no state has the name you searched for, display `Not found`
 * Your code should not be executed when imported
 
-**Solution:** [10-model_state_my_get.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/10-model_state_my_get.py)
+**Solution:** [10-model_state_my_get.py](./0x0F-python-object_relational_mapping/10-model_state_my_get.py)
 
 ```
-$ amonkeyprogramer@ubuntu:~/0x0F$ ./10-model_state_my_get.py root root hbtn_0e_6_usa Texas
+$ globalsmile@ubuntu:~/0x0F$ ./10-model_state_my_get.py root root hbtn_0e_6_usa Texas
 3
-$ amonkeyprogramer@ubuntu:~/0x0F$ ./10-model_state_my_get.py root root hbtn_0e_6_usa Illinois
+$ globalsmile@ubuntu:~/0x0F$ ./10-model_state_my_get.py root root hbtn_0e_6_usa Illinois
 Not found
-$ amonkeyprogramer@ubuntu:~/0x0F$
+$ globalsmile@ubuntu:~/0x0F$
 ```
 
 ## Add a new state
@@ -442,19 +442,19 @@ Write a script that adds the `State` object “Louisiana” to the database `hbt
 * Print the new `states.id` after creation
 * Your code should not be executed when imported
 
-**Solution:** [11-model_state_insert.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/11-model_state_insert.py)
+**Solution:** [11-model_state_insert.py](./0x0F-python-object_relational_mapping/11-model_state_insert.py)
 
 ```
-$ amonkeyprogramer@ubuntu:~/0x0F$ ./11-model_state_insert.py root root hbtn_0e_6_usa 
+$ globalsmile@ubuntu:~/0x0F$ ./11-model_state_insert.py root root hbtn_0e_6_usa 
 6
-$ amonkeyprogramer@ubuntu:~/0x0F$ ./7-model_state_fetch_all.py root root hbtn_0e_6_usa 
+$ globalsmile@ubuntu:~/0x0F$ ./7-model_state_fetch_all.py root root hbtn_0e_6_usa 
 1: California
 2: Arizona
 3: Texas
 4: New York
 5: Nevada
 6: Louisiana
-$ amonkeyprogramer@ubuntu:~/0x0F$
+$ globalsmile@ubuntu:~/0x0F$
 ```
 
 ## Update a state
@@ -468,18 +468,18 @@ Write a script that changes the name of a `State` object from the database `hbtn
 * Change the name of the `State` where `id = 2` to `New Mexico`
 * Your code should not be executed when imported
 
-**Solution:** [12-model_state_update_id_2.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/12-model_state_update_id_2.py)
+**Solution:** [12-model_state_update_id_2.py](./0x0F-python-object_relational_mapping/12-model_state_update_id_2.py)
 
 ```
-$ amonkeyprogramer@ubuntu:~/0x0F$ ./12-model_state_update_id_2.py root root hbtn_0e_6_usa 
-$ amonkeyprogramer@ubuntu:~/0x0F$ ./7-model_state_fetch_all.py root root hbtn_0e_6_usa 
+$ globalsmile@ubuntu:~/0x0F$ ./12-model_state_update_id_2.py root root hbtn_0e_6_usa 
+$ globalsmile@ubuntu:~/0x0F$ ./7-model_state_fetch_all.py root root hbtn_0e_6_usa 
 1: California
 2: New Mexico
 3: Texas
 4: New York
 5: Nevada
 6: Louisiana
-$ amonkeyprogramer@ubuntu:~/0x0F$
+$ globalsmile@ubuntu:~/0x0F$
 ```
 
 ## Delete states
@@ -492,14 +492,14 @@ Write a script that deletes all `State` objects with a name containing the lette
 * Your script should connect to a MySQL server running on `localhost` at port `3306`
 * Your code should not be executed when imported
 
-**Solution:** [13-model_state_delete_a.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/13-model_state_delete_a.py)
+**Solution:** [13-model_state_delete_a.py](./0x0F-python-object_relational_mapping/13-model_state_delete_a.py)
 
 ```
-$ amonkeyprogramer@ubuntu:~/0x0F$ ./13-model_state_delete_a.py root root hbtn_0e_6_usa 
-$ amonkeyprogramer@ubuntu:~/0x0F$ ./7-model_state_fetch_all.py root root hbtn_0e_6_usa 
+$ globalsmile@ubuntu:~/0x0F$ ./13-model_state_delete_a.py root root hbtn_0e_6_usa 
+$ globalsmile@ubuntu:~/0x0F$ ./7-model_state_fetch_all.py root root hbtn_0e_6_usa 
 2: New Mexico
 4: New York
-$ amonkeyprogramer@ubuntu:~/0x0F$
+$ globalsmile@ubuntu:~/0x0F$
 ```
 
 ## Cities in state
@@ -524,10 +524,10 @@ Next, write a script `14-model_city_fetch_by_state.py` that prints all `City` ob
 * Results must be display as they are in the example below (`<state name>: (<city id>) <city name>`)
 * Your code should not be executed when imported
 
-**Solution:** [model_city.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/model_city.py), [14-model_city_fetch_by_state.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/14-model_city_fetch_by_state.py)
+**Solution:** [model_city.py](./0x0F-python-object_relational_mapping/model_city.py), [14-model_city_fetch_by_state.py](./0x0F-python-object_relational_mapping/14-model_city_fetch_by_state.py)
 
 ```
-$ amonkeyprogramer@ubuntu:~/0x0F$ cat 14-model_city_fetch_by_state.sql
+$ globalsmile@ubuntu:~/0x0F$ cat 14-model_city_fetch_by_state.sql
 -- Create database hbtn_0e_14_usa, tables states and cities + some data
 CREATE DATABASE IF NOT EXISTS hbtn_0e_14_usa;
 USE hbtn_0e_14_usa;
@@ -552,9 +552,9 @@ INSERT INTO cities (state_id, name) VALUES (3, "Dallas"), (3, "Houston"), (3, "A
 INSERT INTO cities (state_id, name) VALUES (4, "New York");
 INSERT INTO cities (state_id, name) VALUES (5, "Las Vegas"), (5, "Reno"), (5, "Henderson"), (5, "Carson City");
 
-$ amonkeyprogramer@ubuntu:~/0x0F$ cat 14-model_city_fetch_by_state.sql | mysql -uroot -p
+$ globalsmile@ubuntu:~/0x0F$ cat 14-model_city_fetch_by_state.sql | mysql -uroot -p
 Enter password: 
-$ amonkeyprogramer@ubuntu:~/0x0F$ ./14-model_city_fetch_by_state.py root root hbtn_0e_14_usa
+$ globalsmile@ubuntu:~/0x0F$ ./14-model_city_fetch_by_state.py root root hbtn_0e_14_usa
 California: (1) San Francisco
 California: (2) San Jose
 California: (3) Los Angeles
@@ -570,7 +570,7 @@ Nevada: (12) Las Vegas
 Nevada: (13) Reno
 Nevada: (14) Henderson
 Nevada: (15) Carson City
-$ amonkeyprogramer@ubuntu:~/0x0F$
+$ globalsmile@ubuntu:~/0x0F$
 ```
 
 ## City relationship
@@ -591,10 +591,10 @@ Write a script that creates the ``State`` “California” with the `City` “Sa
 * You must use the `cities` relationship for all `State` objects
 * Your code should not be executed when imported
 
-**Solution:** [relationship_city.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/relationship_city.py), [relationship_state.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/relationship_state.py), [100-relationship_states_cities.py](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x0F-python-object_relational_mapping/100-relationship_states_cities.py)
+**Solution:** [relationship_city.py](./0x0F-python-object_relational_mapping/relationship_city.py), [relationship_state.py](./0x0F-python-object_relational_mapping/relationship_state.py), [100-relationship_states_cities.py](./0x0F-python-object_relational_mapping/100-relationship_states_cities.py)
 
 ```
-$ amonkeyprogramer@ubuntu:~/0x0F$ cat 100-relationship_states_cities.sql
+$ globalsmile@ubuntu:~/0x0F$ cat 100-relationship_states_cities.sql
 -- Create the database hbtn_0e_100_usa
 CREATE DATABASE IF NOT EXISTS hbtn_0e_100_usa;
 USE hbtn_0e_100_usa;
@@ -602,15 +602,15 @@ USE hbtn_0e_100_usa;
 SELECT * FROM states;
 SELECT * FROM cities;
 
-$ amonkeyprogramer@ubuntu:~/0x0F$ cat 100-relationship_states_cities.sql | mysql -uroot -p
+$ globalsmile@ubuntu:~/0x0F$ cat 100-relationship_states_cities.sql | mysql -uroot -p
 Enter password: 
 ERROR 1146 (42S02) at line 5: Table 'hbtn_0e_100_usa.states' doesn't exist
-$ amonkeyprogramer@ubuntu:~/0x0F$ ./100-relationship_states_cities.py root root hbtn_0e_100_usa
-$ amonkeyprogramer@ubuntu:~/0x0F$ cat 100-relationship_states_cities.sql | mysql -uroot -p
+$ globalsmile@ubuntu:~/0x0F$ ./100-relationship_states_cities.py root root hbtn_0e_100_usa
+$ globalsmile@ubuntu:~/0x0F$ cat 100-relationship_states_cities.sql | mysql -uroot -p
 Enter password: 
 id  name
 1   California
 id  name    state_id
 1   San Francisco   1
-$ amonkeyprogramer@ubuntu:~/0x0F$
+$ globalsmile@ubuntu:~/0x0F$
 ```
