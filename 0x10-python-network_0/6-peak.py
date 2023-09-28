@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-"""
-finds peak
-"""
-
+""" finds peak """
 
 def search(lo, h, ints):
     """
@@ -19,7 +16,8 @@ def search(lo, h, ints):
 
 def find_peak(list_of_integers):
     """
-    find the peak of the integers using the search option above.
+    find the peak of the integers
+    using the search option above.
     """
 
     if not list_of_integers:
