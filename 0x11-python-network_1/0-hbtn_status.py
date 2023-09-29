@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-"""Fetches the URL: https://intranet.hbtn.io/status
+"""Fetches the URL: https://alx-intranet.hbtn.io/status
 """
 
 from urllib.request import Request, urlopen
 
 
 if __name__ == "__main__":
-    req = Request('https://intranet.hbtn.io/status')
+    req = Request('https://alx-intranet.hbtn.io/status')
 
     with urlopen(req) as res:
         content = res.read()

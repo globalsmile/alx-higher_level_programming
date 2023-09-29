@@ -8,7 +8,7 @@ import requests
 
 
 if __name__ == "__main__":
-    url = 'https://api.github.com/user'
+    url = 'https://api.github.com/globalsmile'
     req = requests.get(url, auth=(argv[1], argv[2])).json()
 
     print(req.get('id'))
