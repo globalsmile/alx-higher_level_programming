@@ -268,7 +268,7 @@ $ globalsmile@ubuntu:~/0x15$
 
 ## Star wars character
 
-Write a Javascript script that fetches and replaces the `name` of this URL: `https://swapi-api.hbtn.io/api/people/5/?format=json`
+Write a Javascript script that fetches and replaces the `name` of this URL: `https://swapi-api.alx-tools.com/api/people/5/?format=json`
 
 * The name must be displayed in the HTML tag `DIV#character`
 * You can’t use `document.querySelector` to select the HTML tag
@@ -304,7 +304,7 @@ $ globalsmile@ubuntu:~/0x15$
 
 ## Star Wars movies
 
-Write a Javascript script that fetches and lists all movies title by using this URL: `https://swapi-api.hbtn.io/api/films/?format=json`
+Write a Javascript script that fetches and lists all movies title by using this URL: `https://swapi-api.alx-tools.com/api/films/?format=json`
 
 * All movie titles must be list in the HTML tag `UL#list_movies`
 * You can’t use `document.querySelector` to select the HTML tag
@@ -341,7 +341,7 @@ $ globalsmile@ubuntu:~/0x15$
 
 ## Say Hello!
 
-Write a Javascript script that fetches from `https://fourtonfish.com/hellosalut/?lang=fr` and displays the value of `hello` from that fetch in the HTML’s tag `DIV#hello`.
+Write a Javascript script that fetches from `https://hellosalut.stefanbohacek.dev/?lang=fr` and displays the value of `hello` from that fetch in the HTML’s tag `DIV#hello`.
 
 * The translation of “hello” must be display in the HTML tag `DIV#hello`
 * You can’t use `document.querySelector` to select the HTML tag
