@@ -23,10 +23,10 @@ Write a Javascript script that updates the text color of the HTML tag `HEADER` t
 
 Please test with this HTML file in your browser:
 
-**Solution:** [0-script.js](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x15-javascript-web_jquery/0-script.js)
+**Solution:** [0-script.js](./0-script.js)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x15$ cat 0-main.html 
+$ globalsmile@ubuntu:~/0x15$ cat 0-main.html 
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -42,7 +42,7 @@ $ amonkeyprogrammer@ubuntu:~/0x15$ cat 0-main.html
     <script type="text/javascript" src="0-script.js"></script>
   </body>
 </html>
-$ amonkeyprogrammer@ubuntu:~/0x15$
+$ globalsmile@ubuntu:~/0x15$
 ```
 
 ## With jQuery
@@ -54,10 +54,10 @@ Write a Javascript script that updates the text color of the HTML tag `HEADER` t
 
 Please test with this HTML file in your browser:
 
-**Solution:** [1-script.js](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x15-javascript-web_jquery/1-script.js)
+**Solution:** [1-script.js](./1-script.js)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x15$ cat 1-main.html 
+$ globalsmile@ubuntu:~/0x15$ cat 1-main.html 
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -74,7 +74,7 @@ $ amonkeyprogrammer@ubuntu:~/0x15$ cat 1-main.html
     <script type="text/javascript" src="1-script.js"></script>
   </body>
 </html>
-$ amonkeyprogrammer@ubuntu:~/0x15$
+$ globalsmile@ubuntu:~/0x15$
 ```
 
 ## Click and turn red
@@ -86,10 +86,10 @@ Write a Javascript script that updates the text color of the HTML tag `HEADER` t
 
 Please test with this HTML file in your browser:
 
-**Solution:** [2-script.js](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x15-javascript-web_jquery/2-script.js)
+**Solution:** [2-script.js](./2-script.js)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x15$ cat 2-main.html 
+$ globalsmile@ubuntu:~/0x15$ cat 2-main.html 
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -107,7 +107,7 @@ $ amonkeyprogrammer@ubuntu:~/0x15$ cat 2-main.html
     <script type="text/javascript" src="2-script.js"></script>
   </body>
 </html>
-$ amonkeyprogrammer@ubuntu:~/0x15$
+$ globalsmile@ubuntu:~/0x15$
 ```
 
 ## Add `.red` class
@@ -119,10 +119,10 @@ Write a Javascript script that adds the class `red` to the HTML tag `HEADER` to 
 
 Please test with this HTML file in your browser:
 
-**Solution:** [3-script.js](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x15-javascript-web_jquery/3-script.js)
+**Solution:** [3-script.js](./3-script.js)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x15$ cat 3-main.html 
+$ globalsmile@ubuntu:~/0x15$ cat 3-main.html 
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -145,7 +145,7 @@ $ amonkeyprogrammer@ubuntu:~/0x15$ cat 3-main.html
     <script type="text/javascript" src="3-script.js"></script>
   </body>
 </html>
-$ amonkeyprogrammer@ubuntu:~/0x15$
+$ globalsmile@ubuntu:~/0x15$
 ```
 
 ## Toggle classes
@@ -159,10 +159,10 @@ Write a Javascript script that toggles the class of the HTML tag `HEADER` to red
 
 Please test with this HTML file in your browser:
 
-**Solution:** [4-script.js](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x15-javascript-web_jquery/4-script.js)
+**Solution:** [4-script.js](./4-script.js)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x15$ cat 4-main.html 
+$ globalsmile@ubuntu:~/0x15$ cat 4-main.html 
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -188,7 +188,7 @@ $ amonkeyprogrammer@ubuntu:~/0x15$ cat 4-main.html
     <script type="text/javascript" src="4-script.js"></script>
   </body>
 </html>
-$ amonkeyprogrammer@ubuntu:~/0x15$
+$ globalsmile@ubuntu:~/0x15$
 ```
 
 ## List of elements
@@ -202,10 +202,10 @@ Write a Javascript script that adds a `LI` element to a list when the user click
 
 Please test with this HTML file in your browser:
 
-**Solution:** [5-script.js](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x15-javascript-web_jquery/5-script.js)
+**Solution:** [5-script.js](./5-script.js)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x15$ cat 5-main.html 
+$ globalsmile@ubuntu:~/0x15$ cat 5-main.html 
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -228,7 +228,7 @@ $ amonkeyprogrammer@ubuntu:~/0x15$ cat 5-main.html
     <script type="text/javascript" src="5-script.js"></script>
   </body>
 </html>
-$ amonkeyprogrammer@ubuntu:~/0x15$
+$ globalsmile@ubuntu:~/0x15$
 ```
 
 ## Change the text
@@ -240,10 +240,10 @@ Write a Javascript script that updates the text of the HTML tag `HEADER` to “N
 
 Please test with this HTML file in your browser:
 
-**Solution:** [6-script.js](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x15-javascript-web_jquery/6-script.js)
+**Solution:** [6-script.js](./6-script.js)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x15$ cat 6-main.html 
+$ globalsmile@ubuntu:~/0x15$ cat 6-main.html 
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -263,7 +263,7 @@ $ amonkeyprogrammer@ubuntu:~/0x15$ cat 6-main.html
     <script type="text/javascript" src="6-script.js"></script>
   </body>
 </html>
-$ amonkeyprogrammer@ubuntu:~/0x15$
+$ globalsmile@ubuntu:~/0x15$
 ```
 
 ## Star wars character
@@ -276,10 +276,10 @@ Write a Javascript script that fetches and replaces the `name` of this URL: `htt
 
 Please test with this HTML file in your browser:
 
-**Solution:** [7-script.js](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x15-javascript-web_jquery/7-script.js)
+**Solution:** [7-script.js](./7-script.js)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x15$ cat 7-main.html 
+$ globalsmile@ubuntu:~/0x15$ cat 7-main.html 
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -299,7 +299,7 @@ $ amonkeyprogrammer@ubuntu:~/0x15$ cat 7-main.html
     <script type="text/javascript" src="7-script.js"></script>
   </body>
 </html>
-$ amonkeyprogrammer@ubuntu:~/0x15$
+$ globalsmile@ubuntu:~/0x15$
 ```
 
 ## Star Wars movies
@@ -312,10 +312,10 @@ Write a Javascript script that fetches and lists all movies title by using this 
 
 Please test with this HTML file in your browser:
 
-**Solution:** [8-script.js](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x15-javascript-web_jquery/8-script.js)
+**Solution:** [8-script.js](./8-script.js)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x15$ cat 8-main.html 
+$ globalsmile@ubuntu:~/0x15$ cat 8-main.html 
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -336,7 +336,7 @@ $ amonkeyprogrammer@ubuntu:~/0x15$ cat 8-main.html
     <script type="text/javascript" src="8-script.js"></script>
   </body>
 </html>
-$ amonkeyprogrammer@ubuntu:~/0x15$
+$ globalsmile@ubuntu:~/0x15$
 ```
 
 ## Say Hello!
@@ -350,10 +350,10 @@ Write a Javascript script that fetches from `https://fourtonfish.com/hellosalut/
 
 Please test with this HTML file in your browser:
 
-**Solution:** [9-script.js](https://github.com/monoprosito/holbertonschool-higher_level_programming/blob/master/0x15-javascript-web_jquery/9-script.js)
+**Solution:** [9-script.js](./9-script.js)
 
 ```
-$ amonkeyprogrammer@ubuntu:~/0x15$ cat 9-main.html 
+$ globalsmile@ubuntu:~/0x15$ cat 9-main.html 
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -373,5 +373,5 @@ $ amonkeyprogrammer@ubuntu:~/0x15$ cat 9-main.html
     </footer>
   </body>
 </html>
-$ amonkeyprogrammer@ubuntu:~/0x15$
+$ globalsmile@ubuntu:~/0x15$
 ```
