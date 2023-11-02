@@ -1,5 +1,5 @@
-const characterUri = 'https://swapi-api.hbtn.io/api/people/5/?format=json';
-const $characterDiv = $('div#character');
+const characterUri = 'https://swapi-api.alx-tools.com/api/people/5/?format=json';
+const $characterDiv = $('DIV#character');
 
 $.ajax({
   url: characterUri,

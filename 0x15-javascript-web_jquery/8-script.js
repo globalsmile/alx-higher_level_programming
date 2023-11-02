@@ -1,4 +1,4 @@
-const moviesUri = 'https://swapi-api.hbtn.io/api/films/?format=json';
+const moviesUri = 'https://swapi-api.alx-tools.com/api/films/?format=json';
 const $movieList = $('ul#list_movies');
 
 $.ajax({

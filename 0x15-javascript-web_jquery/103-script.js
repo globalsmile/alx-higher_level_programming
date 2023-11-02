@@ -12,7 +12,7 @@ $(document).ready(function () {
     let url = 'https://www.fourtonfish.com/hellosalut/hello/' + lang_code + '%22)&format=json';
 
     $.get(url, (data) => {
-      $('DIV#hello').text(data.query.results.channel.wind.speed);
+      $('DIV#hello').text(data.hello);
     });
   });
 });
